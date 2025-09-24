@@ -1,0 +1,64 @@
+/* Wrapper with dotted light-blue background */
+.job-form-wrapper {
+    /* background-color: #B3D3D5; */
+    background-image: url('/Landing page.png');
+    padding: 80px;
+}
+
+.custom-container-job-form {
+    background-color: #B3D3D5;
+    width: 70%;
+}
+
+.custom-heading-job-form {
+    color: #0b6b6b;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-para-job-form {
+    color: #0b6b6b;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Input & Select Styling */
+.custom-input {
+  background-color: rgba(210, 230, 228,0.6);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #0b6b6b;
+  box-shadow: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.custom-input::placeholder {
+  color: #0b6b6b;
+  font-size: 14px;
+}
+
+.custom-input:focus {
+  border: 2px solid #0b6b6b; /* light blue focus */
+  outline: none;
+  box-shadow: none;
+}
+
+/* Button Styling */
+.btn-submit {
+  background-color: #FD661F;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #ff5608;
+  color: white;
+}

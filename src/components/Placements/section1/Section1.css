@@ -1,0 +1,38 @@
+.custom-text-color-orange {
+    color: #FD661F;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.custom-text-color-green {
+    color: #0b6b6b;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-text-color-green-small {
+    color: #0b6b6b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+}
+
+.custom-svg-placement {
+    width: 53px;
+    height: 53px;
+    background-color: #0b6b6b;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.custom-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    width: 195px;
+    font-weight: 600;
+    color: #0b6b6b;
+}

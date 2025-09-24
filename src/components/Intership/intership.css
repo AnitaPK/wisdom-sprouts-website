@@ -1,0 +1,125 @@
+.intership-section {
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.intership-title {
+  font-size: 40px;
+  color: #0b4b4b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intership-highlight {
+  color: #FD661F; 
+}
+.btn-connect {
+  background-color: #FD661F;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-connect:hover {
+  background-color: #ff5202;
+  color: white;
+}
+
+/* eligibility  */
+
+.custom-eligibily-button {
+  background-color: #B3D3D5; 
+  color: #0B7077; 
+  width: 250px;
+  padding: 15px 10px;
+  border-radius: 30px; 
+  border: none;
+  font-family: 'Arial', sans-serif; 
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 10px 0px -2px #0B7077; 
+  transition: all 0.3s ease; 
+  outline: none; 
+}
+
+/* .custom-eligibily-button:hover {
+  background-color: #87c3c3; 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
+} */
+
+.custom-eligibily-button:active {
+  transform: translateY(0); 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15); 
+}
+
+
+/* skill card grid  */
+
+.cardSection{
+    background-image: url('/Landing page.png');
+    padding: 80px;
+}
+
+.cardContainer {
+  background-color: #e8f3f3;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.customCard {
+  background-color: #2f4f4f; /* Default dark teal for cards */
+  color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.alternateCard {
+  background-color: #3a6a6a; /* Alternate color for demonstration */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.customCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.badge {
+  background-color: #a7d3d3;
+  color: #2f4f4f;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.cardTitle {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.cardTools {
+  font-size: 0.9em;
+  color: #c0c0c0;
+  margin-bottom: 15px;
+}
+
+.cardDescription {
+  font-size: 1em;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+

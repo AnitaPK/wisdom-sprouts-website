@@ -1,0 +1,24 @@
+
+.headingOne{
+    font-size: 40px;
+    color:  #FD661F;;
+
+}
+.info-paragraph{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+.headingOne{
+    font-size: 32px;
+    font-style: center;
+    display: block;
+}
+}

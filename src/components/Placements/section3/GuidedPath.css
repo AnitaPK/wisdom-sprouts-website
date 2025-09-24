@@ -1,0 +1,23 @@
+.guided-section{
+        /* background-image: url('/Landing page.png'); */
+        /* background-color: #B3D3D5; */
+        padding-top:100px;
+}
+.step-text{
+    font-family: 'Montserrat', sans-serif;
+    color: #0b6b6b;
+    font-weight: 700;
+
+}
+.custom-text-color-green {
+    color: #0b6b6b;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-text-color-green-small {
+    color: #0b6b6b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+}

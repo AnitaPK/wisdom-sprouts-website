@@ -1,0 +1,26 @@
+
+.custom_navbar{
+    background-color: transparent;
+    font-weight: 700;
+}
+
+
+.custom_orange_button{
+    background-color: #FD661F;
+    color: white;
+    width: 211px;
+    /* height: 56px; */
+    border-radius: 100px;
+    padding: 16px;
+    text-align: center;
+    border: 0;
+}
+.custom_white_button{
+   background-color: #D2E6E4;
+    color: #0B7077;
+    width: 211px;
+    /* height: 56px; */
+    border-radius: 100px;
+    padding: 16px;
+    text-align: center;
+}

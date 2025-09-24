@@ -1,0 +1,51 @@
+.row {
+  gap: 18px;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* circle base */
+.circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 6px 18px rgba(11, 75, 75, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.circle:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(11, 75, 75, 0.1);
+}
+
+/* background colors */
+.teal {
+  background-color: #0b7575;
+}
+
+.orange {
+  background-color: #ff6a2b;
+}
+
+/* inner wrapper */
+.imgWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 60%;
+}
+
+/* icon styling */
+.iconImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* makes dark icons white */
+}

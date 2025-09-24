@@ -1,0 +1,23 @@
+/* Hiring Section */
+.hiring-section {
+  text-align: center;
+  margin: 50px 0;
+}
+.hiring-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.hiring-subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.partner-item img {
+  max-height: 40px;
+  object-fit: contain;
+}

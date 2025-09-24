@@ -1,0 +1,30 @@
+.custom-footer{
+    color: #0b6b6b;
+}
+
+.custom-footer h6{
+    font-size: 20px;
+}
+.custom-icon-color{
+    color:  #FD661F;
+}
+.custom-info-ws{
+    font-size: 18px;
+    /* font-weight:; */
+}
+.list-unstyled li{
+    margin-bottom: 20px !important;
+}
+.custom-get-in-touch p{
+    font-size: 14px;
+}
+.custom-icon-social{
+    display: block;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #FD661F;
+    padding-left: 9px;
+}

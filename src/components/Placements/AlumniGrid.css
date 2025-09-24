@@ -1,0 +1,19 @@
+.custom-card{
+    width: 270px;
+    min-height: 256px !important; 
+    position: relative;
+     /* display: flex !important; */
+  /* flex-direction: column !important; */
+  /* justify-content: flex-end !important; */
+    padding-top: 120px !important;
+}
+
+.custom-image{
+    width: 170px;
+    height: 171px;
+    border-radius: 8px;
+    position: absolute;
+    top: -40px;
+    left: 50px;
+    /* transform: translateX(-50%); */
+}

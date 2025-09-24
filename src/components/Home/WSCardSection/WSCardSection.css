@@ -1,0 +1,25 @@
+.customContainer{
+        background-image: url('/Landing page.png');
+        padding-top:180px;
+}
+
+.customContainer h2{
+        font-size: 56px;
+        color: #085459;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 768px) {
+        .customContainer{
+                padding-top: 100px
+        }
+.customContainer h2{
+        font-size: 24px;
+}
+}

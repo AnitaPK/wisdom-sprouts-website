@@ -1,0 +1,42 @@
+/* /Card.module.css */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  /* max-width: 300px; */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.customCard{
+    max-width: 638px;
+    background-color: #0B7077;
+}
+.card-title{
+    font-size: 36px;
+}
+.custom_orange_button_card{
+    background-color: #FD661F;
+    color: white;
+    width: 130px;
+    /* height: 56px; */
+    border-radius: 100px;
+    padding: 16px;
+    text-align: center;
+    border: 0;
+}
+.customCardImage{
+    width: 268px !important;
+    height: 200px !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 768px) {
+    .card-title{
+    font-size: 24px;
+    }
+}
