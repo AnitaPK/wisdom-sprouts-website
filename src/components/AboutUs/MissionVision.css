@@ -1,0 +1,66 @@
+/* styles/MissionVision.module.css */
+
+.missionVisionSection {
+  background-color: #e0f2f7; /* Default light blue background, will be overridden by background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333; /* Default text color */
+  padding: 60px 0; /* Vertical padding for the section */
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0D0C10; 
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #52505F; 
+  max-width: 600px; 
+}
+
+.imageCard {
+  background-color: #ffffff; /* White background for the image card */
+  border-radius: 20px;
+  padding: 20px; /* Padding around the image inside the card */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Allows vertical alignment and size control */
+  overflow: hidden; /* Ensures image doesn't spill out */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .sectionTitle {
+    font-size: 2rem;
+    text-align: center; /* Center align title on smaller screens */
+  }
+  .sectionDescription {
+    font-size: 1rem;
+    text-align: center; /* Center align description on smaller screens */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .imageCard {
+    width: 100%; /* Make image card full width on smaller screens */
+    max-width: 400px; /* Limit max width for image card */
+    margin: 0 auto 30px auto; /* Center card and add bottom margin */
+  }
+
+  /* Adjust order for the top section on small/medium screens */
+  .row .order-md-1 { order: 1 !important; }
+  .row .order-md-2 { order: 2 !important; }
+}
+
+@media (max-width: 767.98px) {
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  .sectionDescription {
+    font-size: 0.95rem;
+  }
+}

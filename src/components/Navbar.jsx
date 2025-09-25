@@ -61,7 +61,7 @@ export default function Navbar() {
               <Link href="/gallery" className="nav-link">Gallery</Link>
             </li>
             <li className="nav-item">
-              <Link href="/internship" className="nav-link">Hire From Us</Link>
+              <Link href="/hire-from-us" className="nav-link">Hire From Us</Link>
             </li>
             
           </ul>

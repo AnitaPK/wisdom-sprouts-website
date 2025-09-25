@@ -4,7 +4,7 @@ import './HeaderAbout.css'
 
 const HeaderAbout = () => {
   return (
-     <section className="container p-5">
+     <section className="container p-5 mb-5">
       <div className="row ">
         {/* Left Content */}
         <div className="col-md-7">

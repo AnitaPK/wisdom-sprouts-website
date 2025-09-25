@@ -6,6 +6,7 @@ import './PlacementPage.css'
 import HiringPartner from './HiringPartner'
 import Section3 from './section3/Section3'
 import Section4 from './section4/Section4'
+import BannerForCall from './section4/BannerForCall'
 
 
 
@@ -17,6 +18,7 @@ const PlacementPage = ({alumni}) => {
       <HiringPartner />
       <Section3 />
       <Section4 />
+      <BannerForCall />
     </>
   )
 }

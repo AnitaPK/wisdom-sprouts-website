@@ -1,0 +1,108 @@
+.custom-section{
+        background-image: url('/Landing page.png');
+        padding-top:100px;
+}
+.custom-green-badge{
+    background-color: transparent;
+    color: #555;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #fff;
+}
+.custom-left-content{
+    /* text-align: justify; */
+    font-size: 40px;
+    color: #085459;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-right-content{
+    /* text-align: justify; */
+    padding-top: 20px;
+    width: 80%;
+    font-size: 18px;
+    color: #085459;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* styles/HiringPartners.module.css */
+
+.hiringPartnersSection {
+  /* This background color will be replaced by your background image */
+  background-color: #e0f2f7; /* Light blue, similar to your image */
+  color: #333; /* Default text color */
+}
+
+.statsCard {
+  background-color: transparent; 
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.9); /* Lighter border */
+  /* backdrop-filter: blur(5px);  */
+}
+
+.statsLabel {
+  color: #085459;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 7px 15px;
+  border-radius: 7px;
+  display: inline;
+}
+
+.statsNumber {
+  color: #085459; 
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 20px;
+  font-family: 'Bricolage Grotesque', sans-serif !important;
+}
+
+/* Customizing the border-end color from Bootstrap */
+.border-end.border-white {
+  border-color: rgba(255, 255, 255, 0.5) !important; /* Semi-transparent white for dividers */
+}
+
+.sectionTitle {
+  color: #085459; 
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.sectionSubtitle {
+  color: #074347; 
+  font-size: 1rem;
+  margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.logoWrapper {
+  /* Optional: Add some padding/margin around logos if needed */
+  padding: 10px;
+  display: flex; /* Ensures image is centered if wrapper is larger */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .statsNumber {
+    font-size: 2rem;
+  }
+  .statsCard .col-md-4 {
+    border-right: none !important; /* Remove vertical borders on small screens */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important; /* Add horizontal borders */
+  }
+  .statsCard .col-md-4:last-child {
+    border-bottom: none !important; /* No border for the last item */
+  }
+}
