@@ -1,0 +1,42 @@
+.custom-text-color-orange {
+    color: #FD661F;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.custom-text-color-green {
+    color: #0b6b6b;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-text-color-green-small {
+    color: #0b6b6b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+.right-imges{
+    position: relative;
+}
+.custom-white-container{
+    background-color: white;
+    height: 350px;
+    width: 450px;
+    position: absolute;
+    top:-20px;
+    right:20px;
+    border-radius: 10px;
+}
+.ImageOne{
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+.ImageTwo{
+    position: absolute;
+    top:180px; 
+    left:-20px
+}

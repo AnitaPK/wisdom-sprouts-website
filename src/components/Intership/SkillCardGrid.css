@@ -1,0 +1,102 @@
+/* skill card grid  */
+
+.cardSection {
+    background-image: url('/Landing page.png');
+    padding: 80px;
+}
+
+.cardContainer {
+    padding: 40px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.customCard {
+    background-color: #fff;
+    color: #f0f8ff;
+    border-radius: 20px;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out
+}
+
+.alternateCard {
+    background-color: #0B7077;
+    /* color: ; */
+     border-radius: 20px;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out
+}
+
+.customCard:hover ,.alternateCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+.customBadge {
+    background-color: #0B7077;
+    color: #fff;
+    padding: 8px 15px;
+    /* border-radius: 20px; */
+    /* font-size: 0.85em; */
+    font-weight: bold;
+    display: inline;
+}
+
+.alternateBadge {
+    background-color: #E7F1F1;
+    color: #0B7077;
+    padding: 8px 10px;
+    /* border-radius: 20px; */
+    /* font-size: 0.85em; */
+    font-weight: bold;
+    display: inline;
+}
+
+.cardTitle {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.alternateCardTitle {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cardTools {
+    font-size: 0.9em;
+    color: #053236;
+    margin-bottom: 15px;
+}
+
+.alternateCardTools {
+    font-size: 0.9em;
+    color: #E7F1F1;
+    margin-bottom: 15px;
+}
+
+.cardDescription {
+    font-size: 1em;
+    line-height: 1.6;
+    flex-grow: 1;
+    color: #939599;
+}
+
+.alternateCardDescription {
+    font-size: 1em;
+    line-height: 1.6;
+    flex-grow: 1;
+    color: #E7F1F1;
+}

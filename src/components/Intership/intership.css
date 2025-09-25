@@ -27,6 +27,19 @@
   color: white;
 }
 
+/* common in all component  */
+.custom-text-color-green {
+    color: #0b6b6b;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-text-color-green-small {
+    color: #0b6b6b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
 /* eligibility  */
 
 .custom-eligibily-button {
@@ -56,70 +69,31 @@
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15); 
 }
 
+/* Program highlight  */
 
-/* skill card grid  */
+.custom-card-program {
+  background-color: #E7F1F1 !important;
+    font-family: 'Montserrat', sans-serif;
 
-.cardSection{
-    background-image: url('/Landing page.png');
-    padding: 80px;
 }
 
-.cardContainer {
-  background-color: #e8f3f3;
-  padding: 40px 20px;
-  border-radius: 10px;
+.custom-heading {
+  color: #0B7077 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
 }
 
-.customCard {
-  background-color: #2f4f4f; /* Default dark teal for cards */
-  color: #f0f8ff;
-  border-radius: 10px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-  padding: 25px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+.custom-paragraph{
+  color: #0B7077;
+  opacity: 80%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 
-.alternateCard {
-  background-color: #3a6a6a; /* Alternate color for demonstration */
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+.custom-subtitle{
+  color: #0B7077;
+  opacity: 40%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+
 }
-
-.customCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
-}
-
-.badge {
-  background-color: #a7d3d3;
-  color: #2f4f4f;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 0.85em;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-.cardTitle {
-  font-size: 1.6em;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.cardTools {
-  font-size: 0.9em;
-  color: #c0c0c0;
-  margin-bottom: 15px;
-}
-
-.cardDescription {
-  font-size: 1em;
-  line-height: 1.6;
-  flex-grow: 1;
-}
-
-
