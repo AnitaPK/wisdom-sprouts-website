@@ -1,5 +1,5 @@
 import React from 'react';
-import './internship.css';
+import './InternshipPage.css';
 import './SkillCardGrid.css'
 
 const skillData = [

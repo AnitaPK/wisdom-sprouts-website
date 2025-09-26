@@ -1,5 +1,5 @@
 import React from 'react'
-import './Internship.css'
+import './InternshipPage.css'
 
 const Eligibility = () => {
      const categories = ["BE/B.Tech", "BCA", "Career switchers", "IT aspirants"];

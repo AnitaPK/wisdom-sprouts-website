@@ -1,5 +1,5 @@
 import React from 'react'
-import './Internship.css'
+import './InternshipPage.css'
 import Image from 'next/image'
 
 const HeaderIntership = () => {
