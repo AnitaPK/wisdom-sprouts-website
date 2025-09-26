@@ -1,4 +1,4 @@
-import Intership from '@/components/Intership/Intership'
+import Intership from '@/components/Intership/InternshipPage'
 import React from 'react'
 
 const page = () => {
