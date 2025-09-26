@@ -1,10 +1,10 @@
-import Intership from '@/components/Intership/InternshipPage'
+import Internship from '@/components/Internship/InternshipPage'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <Intership />
+      <Internship />
     </div>
   )
 }
