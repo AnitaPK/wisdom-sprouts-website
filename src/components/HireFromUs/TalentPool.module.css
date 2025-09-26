@@ -1,0 +1,142 @@
+.talentPoolSection {
+  padding: 80px 0; 
+  background-size: cover; 
+  background-position: center; 
+  background-image: url('/Landing page.png'); 
+}
+
+.mainTitle {
+  color: #0b4b4b;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.mainDescription {
+  color: #0b4b4b; 
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.imageContainer {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 20px; 
+  overflow: hidden; 
+  padding-top: 15%;
+}
+
+.featureBox {
+  padding: 10px 30px;
+  border-radius: 10px;
+  /* height: 100%;  */
+  display: flex;
+  flex-direction: column;
+}
+
+.graduatesBox {
+  background-color: #0b4b4b; 
+  color: #E9F3E6; 
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+.featureTitle{
+  font-size: 20px;
+}
+
+.graduatesBox .featureTitle,
+.graduatesBox .featureText,
+.graduatesBox .featureNumber {
+  color: #E9F3E6;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.featureNumber {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b4b4b; 
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.featureBox.graduatesBox .featureNumber {
+  color: #E9F3E6;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+
+.featureTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333; 
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.featureBox.graduatesBox .featureTitle {
+  color: #ffffff; 
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.featureText {
+  font-size: 14px;
+  /* line-height: 1.6; */
+  color: #074347;
+  margin-bottom: 0; 
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.featureBox.graduatesBox .featureText {
+  color: rgba(255, 255, 255, 0.9); 
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.statsList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.statsList li, .rolesList li {
+  font-size: 14px;
+  color: #074347;
+  /* margin-bottom: 5px; */
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.checkIcon {
+  color: #074347; 
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.rolesTitle {
+  font-size: 14px;
+  color: #074347;
+  margin:0;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.rolesList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rolesList li {
+  font-size: 14px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}

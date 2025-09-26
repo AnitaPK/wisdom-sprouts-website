@@ -1,0 +1,96 @@
+/* components/HiringPaths.module.css */
+
+.hiringPathsSection {
+  padding: 80px 0;
+}
+
+.mainTitle {
+  max-width: 800px;
+  color: #074347; 
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px auto;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.subtitle {
+  color: #717171;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 50px auto; 
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.hiringCard {
+  background-color: #ffffff; 
+  border: none; 
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); 
+  padding: 25px;
+  height: 100%; 
+}
+
+.cardTitle {
+  color: #0B7077; 
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.cardDescription {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.benefitsList {
+  list-style: none; 
+  padding-left: 0;
+  margin-bottom: 0; 
+  flex-grow: 1; 
+}
+
+.benefitsList li {
+  color: #444;
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: flex; 
+  align-items: flex-start; 
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.checkIcon {
+  color: #FD661F; 
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 12px;
+  line-height: 1; 
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.cardButton {
+  background-color: #FD661F; 
+  color: #ffffff;
+  border: none;
+  padding: 10px 7px;
+  border-radius: 50px; 
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none; 
+  font-family: 'Montserrat', sans-serif !important;
+  display: block;
+  margin: 5px auto;
+}
+
+.cardButton:hover {
+  background-color: #FD661F; 
+  color: #ffffff; 
+}

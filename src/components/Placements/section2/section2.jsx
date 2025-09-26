@@ -7,6 +7,7 @@ const section2 = ({alumni}) => {
     setVisibleCount((prev) => prev + 8); 
   };
   
+  
   return (
     <section className="container-fluid text-center py-5 custom-section2">
       <div className="container w-50">

@@ -1,5 +1,6 @@
-import HireFromUs from '@/components/HireFromUs/HireFromUs'
+import HireFromUs from '@/components/HireFromUs/HireFromUsPage'
 import React from 'react'
+import '@/styles/globals.css'
 
 const page = () => {
   return (

@@ -1,0 +1,40 @@
+/* components/WhyHireUs.module.css */
+
+.whyHireUsSection {
+  /* padding: 60px 0; */
+}
+
+.sectionTitle {
+  color: #0b4b4b; 
+  font-weight: 700;
+  font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.benefitCard {
+  background-color: transparent; 
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.benefitImage {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.benefitText {
+  color: #0b4b4b; 
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
