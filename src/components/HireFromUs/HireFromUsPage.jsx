@@ -5,6 +5,7 @@ import WhyHireUs from './WhyFromUs'
 import TalentPool from './TalentPool'
 import HiringPaths from './HiringPaths'
 import TestimonialCarousel from './TestimonialCarousel'
+import JourneyCarousel from './JourneyCarousel'
 
 const HireFromUs = () => {
   return (
@@ -14,6 +15,7 @@ const HireFromUs = () => {
       <TalentPool />
       <HiringPaths />
       <TestimonialCarousel />
+      <JourneyCarousel />
     </section>
   )
 }

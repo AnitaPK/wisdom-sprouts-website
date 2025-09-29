@@ -46,7 +46,7 @@ const ContactCards = () => {
     },
   ];
   return (
-    <section className="mb-5">
+    <section className="my-2">
       <div className="contact-section container text-center">
         <h3 className="custom-heading-green">Contact Our Team</h3>
         <p className="custom-paragraph-green">
@@ -55,13 +55,13 @@ const ContactCards = () => {
           Have a question? Let’s connect and grow together.
         </p>
       </div>
-      <div className="container text-center ">
-        <div className="row g-4">
+      <div className="container text-center pb-5">
+        <div className="row g-4 ">
           {cardData.map((card, idx) => (
             <div key={idx} className="col-12 col-sm-6 col-md-3">
               <div className="contact-card p-4 h-100 d-flex flex-column justify-content-between">
                 <div>
-                  <div className="d-flex align-items-center mb-3 justify-content-center">
+                  <div className="d-flex align-items-center mb-3 justify-content-center pt-2">
                     <Image
                       src={card.icon}
                       alt={card.icon}

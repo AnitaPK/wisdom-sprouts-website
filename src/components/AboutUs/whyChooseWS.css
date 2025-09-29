@@ -1,8 +1,24 @@
 .heading-why-choose{
     font-size: 48px;
-    color: #074347;
+    color: #141414;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
 }
 .paragrapg-why-choose{
     font-size: 16px;
-    color:#074347
+    color:#074347;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+
+@media (max-width: 768px) {
+.heading-why-choose{
+    font-size: 32px;
+    text-align: center;
+}
+.paragrapg-why-choose{
+    font-size: 16px;
+    text-align: center;
+}
 }

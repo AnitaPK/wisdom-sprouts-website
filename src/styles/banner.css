@@ -44,3 +44,20 @@ background-color: #FD661F;
   transition: 0.3s ease;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+@media (max-width: 767.98px) {
+
+.card-title{
+  font-size: 32px;
+}
+.custom-orng-btn{
+display: block;
+margin: 10px auto;
+
+}
+.custom-white-btn{
+  display: block;
+  margin: 1px auto;
+}
+}

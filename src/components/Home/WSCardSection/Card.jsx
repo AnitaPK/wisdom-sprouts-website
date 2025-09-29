@@ -1,5 +1,6 @@
 "use client";   
 import styles from './Card.css';
+import Image from "next/image";
 
 export default function Card({ title, description, image }) {
   return (

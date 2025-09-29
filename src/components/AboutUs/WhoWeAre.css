@@ -7,15 +7,15 @@
     color: #555;
     font-size: 20px;
     padding: 10px 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     border: 1px solid #fff;
 }
 .custom-left-content{
     /* text-align: justify; */
     font-size: 40px;
     color: #085459;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .custom-right-content{
@@ -24,7 +24,7 @@
     width: 80%;
     font-size: 18px;
     color: #085459;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 
 }
 
@@ -33,7 +33,9 @@
 .hiringPartnersSection {
   /* This background color will be replaced by your background image */
   background-color: #e0f2f7; /* Light blue, similar to your image */
-  color: #333; /* Default text color */
+  color: #085459; /* Default text color */
+    font-family: 'Montserrat', sans-serif !important;
+
 }
 
 .statsCard {
@@ -69,20 +71,18 @@
 }
 
 .sectionTitle {
-  color: #085459; 
+  color: #085459 !important; 
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 0.5rem;
-    font-family: 'Montserrat', sans-serif;
-
+  margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .sectionSubtitle {
-  color: #074347; 
-  font-size: 1rem;
+  color: #074347 !important; 
+  font-size: 16px;
   margin-bottom: 2rem;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .logoWrapper {
@@ -95,6 +95,19 @@
 
 /* Responsive adjustments */
 @media (max-width: 767.98px) {
+  .custom-green-badge{
+    /* margin: 2px auto; */
+    display: none;
+  }
+  .custom-left-content{
+    font-size: 32px;
+    text-align: center;
+  }
+  .custom-right-content{
+    font-size: 16px;
+    text-align: center;
+    padding-left: 25px;
+  }
   .statsNumber {
     font-size: 2rem;
   }
@@ -105,4 +118,14 @@
   .statsCard .col-md-4:last-child {
     border-bottom: none !important; /* No border for the last item */
   }
+.sectionTitle {
+font-size: 32px;
+}
+.sectionSubtitle{
+ font-size: 16px; 
+}
+.logoWrapper {
+  padding: 5px;
+}
+
 }

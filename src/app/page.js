@@ -14,7 +14,6 @@ const  page = async() => {
         <img src='/Frame 427320760.png' alt="" className='custom-image-play'/>
       </div>
       <WSCardSection features={features}/>
-      <hr></hr>
       
     </>
   )

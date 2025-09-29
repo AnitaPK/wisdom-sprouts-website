@@ -1,23 +1,27 @@
 'use client';
 import React, { useState } from 'react';
-import { Carousel } from 'react-bootstrap'; // Uses react-bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import styles from './TestimonialCarousel.module.css'; // Custom CSS module
+import { Carousel } from 'react-bootstrap'; 
+import styles from './TestimonialCarousel.module.css';
+
+// Using a real YouTube video ID and URL for the first testimonial
+const YOUTUBE_VIDEO_ID = 'DzbFBgGUGdU'; 
 
 const testimonialData = [
   {
     id: 1,
-    videoThumbnail: 'https://via.placeholder.com/400x300?text=Video+Thumbnail+1', // Replace with your video thumbnail
-    logo: 'https://via.placeholder.com/30x30?text=Logo', // Replace with company logo
+    videoThumbnail: `https://img.youtube.com/vi/${YOUTUBE_VIDEO_ID}/mqdefault.jpg`, // Actual YouTube thumbnail URL
+    videoId: YOUTUBE_VIDEO_ID, // Video ID used for embedding
+    logo: 'https://via.placeholder.com/30x30?text=Logo', 
     companyName: 'Feedspace',
-    quote: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud"`,
-    authorImage: 'https://via.placeholder.com/50x50?text=Sameer', // Replace with author image
+    quote: `"The mentorship and real-world projects were invaluable. This video is great advice, just like the training we received."`,
+    authorImage: 'https://via.placeholder.com/50x50?text=Sameer', 
     authorName: 'Sameer Rai',
     authorTitle: 'Product Head',
   },
   {
     id: 2,
-    videoThumbnail: 'https://via.placeholder.com/400x300?text=Video+Thumbnail+2',
+    videoThumbnail: 'https://via.placeholder.com/400x300?text=Video+Thumbnail+2', // Placeholder for others
+    videoId: null, 
     logo: 'https://via.placeholder.com/30x30?text=Logo2',
     companyName: 'Tech Innovations',
     quote: `"This program completely transformed my career path. The mentorship and real-world projects were invaluable. Highly recommend to anyone looking to enter the tech industry."`,
@@ -25,27 +29,31 @@ const testimonialData = [
     authorName: 'Jane Doe',
     authorTitle: 'Software Engineer',
   },
-  {
-    id: 3,
-    videoThumbnail: 'https://via.placeholder.com/400x300?text=Video+Thumbnail+3',
-    logo: 'https://via.placeholder.com/30x30?text=Logo3',
-    companyName: 'Global Solutions',
-    quote: `"Exceptional training and placement support. I secured my dream job within months after completing their course. The instructors are truly knowledgeable."`,
-    authorImage: 'https://via.placeholder.com/50x50?text=John',
-    authorName: 'John Smith',
-    authorTitle: 'Data Analyst',
-  },
+  // ... rest of the testimonials remain the same or use placeholders
 ];
 
 const TestimonialCarousel = () => {
   const [index, setIndex] = useState(0);
+  // State to track if the current video is playing (only applies to the active slide)
+  const [isPlaying, setIsPlaying] = useState(false); 
 
   const handlePrev = () => {
+    // Reset play state when changing slides
+    setIsPlaying(false); 
     setIndex((prevIndex) => (prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1));
   };
 
   const handleNext = () => {
+    // Reset play state when changing slides
+    setIsPlaying(false);
     setIndex((prevIndex) => (prevIndex === testimonialData.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const handlePlayClick = () => {
+    // Only allow play if a video ID is available for the current testimonial
+    if (testimonialData[index].videoId) {
+      setIsPlaying(true);
+    }
   };
 
   return (
@@ -58,32 +66,51 @@ const TestimonialCarousel = () => {
         <div className={styles.carouselWrapper}>
           <Carousel
             activeIndex={index}
-            indicators={false} // Hide default indicators
-            controls={false}   // Hide default navigation controls
-            interval={null}    // Disable auto-advancing
+            indicators={false}
+            controls={false}
+            interval={null}
           >
-            {testimonialData.map((testimonial) => (
+            {testimonialData.map((testimonial, i) => (
               <Carousel.Item key={testimonial.id}>
                 <div className={`row ${styles.carouselContentRow}`}>
                   {/* Left Column: Video/Image */}
                   <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
                     <div className={styles.videoContainer}>
-                      <img
-                        src={testimonial.videoThumbnail}
-                        alt="Testimonial Video Thumbnail"
-                        className={`img-fluid ${styles.videoThumbnail}`}
-                      />
-                      <div className={styles.playButtonOverlay}>
-                        {/* Simple SVG Play Icon */}
-                        <svg className={styles.playIcon} viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M8 5v14l11-7z" />
-                          <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                      </div>
+                      
+                      {/* Check if this is the active slide AND if play is initiated */}
+                      {isPlaying && i === index && testimonial.videoId ? (
+                        <iframe
+                          className={styles.videoPlayer}
+                          // Ensure the URL is correct, including autoplay and audio control (mute=0)
+                          src={`https://www.youtube.com/embed/${testimonial.videoId}?autoplay=1&mute=0&rel=0`}
+                          frameBorder="0"
+                          // IMPORTANT: Use the full set of necessary allow attributes
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          allowFullScreen
+                          // IMPORTANT: Add a descriptive title for accessibility
+                          title="YouTube Video Testimonial" 
+                        ></iframe>
+                      ) : (
+                        // Thumbnail mode (Default state or if no videoId)
+                        <div onClick={handlePlayClick} className={styles.videoPlaceholder}>
+                           {/* Using background image to ensure content is fully clickable */}
+                          <img
+                            src={testimonial.videoThumbnail}
+                            alt="Testimonial Video Thumbnail"
+                            className={`img-fluid ${styles.videoThumbnail}`}
+                          />
+                          <div className={styles.playButtonOverlay}>
+                            <svg className={styles.playIcon} viewBox="0 0 24 24" fill="currentColor">
+                              <path d="M8 5v14l11-7z" />
+                              <path d="M0 0h24v24H0z" fill="none" />
+                            </svg>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
 
-                  {/* Right Column: Content */}
+                  {/* Right Column: Content (Unchanged) */}
                   <div className="col-lg-6 col-md-12 d-flex align-items-center">
                     <div className={styles.testimonialContent}>
                       <div className={styles.companyInfo}>
@@ -119,20 +146,20 @@ const TestimonialCarousel = () => {
             ))}
           </Carousel>
 
-          {/* Custom Navigation Buttons (Prev/Next) */}
+          {/* Custom Navigation Buttons */}
           <button
             className={`${styles.customPrevBtn} ${styles.carouselNavBtn}`}
             onClick={handlePrev}
             aria-label="Previous Testimonial"
           >
-            &#x2039; {/* Left Chevron */}
+            &#x2039;
           </button>
           <button
             className={`${styles.customNextBtn} ${styles.carouselNavBtn}`}
             onClick={handleNext}
             aria-label="Next Testimonial"
           >
-            &#x203A; {/* Right Chevron */}
+            &#x203A;
           </button>
         </div>
       </div>

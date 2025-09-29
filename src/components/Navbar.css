@@ -4,6 +4,20 @@
     font-weight: 700;
 }
 
+.nav-link {
+  color: #0b4b4b; /* default font color */
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #FD661F; /* hover color */
+}
+
+.active-link {
+  color: #FD661F ; /* active link color */
+  font-weight: 600; /* optional bold */
+}
+
 .custom_orange_button{
     background-color: #FD661F;
     color: white;

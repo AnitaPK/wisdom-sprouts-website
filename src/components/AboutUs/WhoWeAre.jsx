@@ -3,7 +3,7 @@ import './WhoWeAre.css'
 import Image from 'next/image'
 const WhoWeAre = () => {
   return (
-    <section className='custom-section'>
+    <section className='custom-section mb-3 pb-5'>
       <div className="container">
         <span class="badge rounded-pill custom-green-badge">Who We Are</span>
       </div>
@@ -54,28 +54,46 @@ const WhoWeAre = () => {
         </div>
 
         {/* Logos */}
-        <div className="d-flex flex-wrap justify-content-center align-items-center gap-4">
+          <div className="container py-4">
+  <div className="row text-center align-items-center">
+    <div className="col-12 col-md-2 mb-3 mb-md-0">
           <div className="logoWrapper">
             <Image src="/logo.png" alt="Elastic" width={100} height={70} objectFit="contain" />
           </div>
+          </div>
+    <div className="col-12 col-md-2 mb-3 mb-md-0">
+
           <div className="logoWrapper">
             <Image src="/logo.png" alt="Freshworks" width={120} height={70} objectFit="contain" />
           </div>
+          </div>
+    <div className="col-12 col-md-2 mb-3 mb-md-0">
+
           <div className="logoWrapper">
             <Image src="/logo.png" alt="Coinbase" width={120} height={70} objectFit="contain" />
           </div>
+          </div>
+    <div className="col-12 col-md-2 mb-3 mb-md-0">
+
           <div className="logoWrapper">
             <Image src="/logo.png" alt="Classpass" width={120} height={70} objectFit="contain" />
           </div>
+          </div>
+    <div className="col-12 col-md-2 mb-3 mb-md-0">
+
           <div className="logoWrapper">
             <Image src="/logo.png" alt="Clearbit" width={100} height={70} objectFit="contain" />
           </div>
+          </div>
+    <div className="col-12 col-md-2 mb-3 mb-md-0">
+
           <div className="logoWrapper">
             <Image src="/logo.png" alt="Calendly" width={110} height={70} objectFit="contain" />
           </div>
+          </div>
         </div>
       </div>
-
+</div>
     </section>
   )
 }

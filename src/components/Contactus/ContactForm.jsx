@@ -4,15 +4,15 @@ import './Contact.css'
 export default function ContactForm() {
   return (
     <section className="contact-form-wrapper">
-      <div className="contact-section container text-center">
-        <h3 className="custom-heading-green">Leave our team a message.</h3>
+      <div className="contact-section container text-center my-0">
+        <h3 className="custom-heading-black">Leave our team a message.</h3>
         <p className="custom-paragraph-green">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non enim<br />
 lacus. Nullam congue blandit quam, sit amet scelerisque turpis.
         </p>
       </div>
 
-    <div className="contact-wrapper">
+    <div className="contact-wrapper mt-0">
       <form className="row g-3">
         {/* First Row */}
         <div className="col-md-4">
@@ -59,7 +59,7 @@ lacus. Nullam congue blandit quam, sit amet scelerisque turpis.
         </div>
 
         {/* Checkbox + Button */}
-        <div className="col-12 d-flex justify-content-between align-items-center mt-2">
+        <div className="col-12 d-flex justify-content-between align-items-center mt-3">
           <div className="form-check">
             <input className="form-check-input custom-check" type="checkbox" id="agree" />
             <label className="form-check-label text-white" htmlFor="agree">

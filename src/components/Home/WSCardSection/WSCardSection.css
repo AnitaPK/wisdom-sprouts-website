@@ -1,25 +1,27 @@
-.customContainer{
-        background-image: url('/Landing page.png');
-        padding-top:180px;
+.customContainer {
+    background-image: url('/Landing page.png');
+    padding-top: 180px;
+    padding-bottom: 80px;
 }
 
-.customContainer h2{
-        font-size: 56px;
-        color: #085459;
+.customContainer h2 {
+    font-size: 56px;
+    color: #085459;
+    margin-bottom: 48px;
+    font-family: var(--bs-body-font-family);
 }
-
-
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
 }
 
-
 @media (max-width: 768px) {
-        .customContainer{
-                padding-top: 100px
-        }
-.customContainer h2{
-        font-size: 24px;
-}
+    .customContainer {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .customContainer h2 {
+        font-size: 32px;
+    }
 }

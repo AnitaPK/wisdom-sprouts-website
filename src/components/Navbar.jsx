@@ -1,8 +1,11 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import LOGO from '../../public/logo.png'
-
+import { usePathname } from "next/navigation"; 
+import "./Navbar.css"
 export default function Navbar() {
+   const pathname = usePathname();
   return (
     <div className=""
       style={{
@@ -41,30 +44,26 @@ export default function Navbar() {
 
         {/* Middle Menu + Right Button (collapsible) */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav mx-auto">
-            <li className="nav-item">
-              <Link href="/" className="nav-link">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/aboutus" className="nav-link">About Us</Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/courses" className="nav-link">Courses</Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/placements" className="nav-link">Placements</Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/internship" className="nav-link">Internship</Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/gallery" className="nav-link">Gallery</Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/hire-from-us" className="nav-link">Hire From Us</Link>
-            </li>
-            
-          </ul>
+<ul className="navbar-nav mx-auto">
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/aboutus" },
+                { name: "Courses", path: "/courses" },
+                { name: "Placements", path: "/placements" },
+                { name: "Internship", path: "/internship" },
+                { name: "Gallery", path: "/gallery" },
+                { name: "Hire From Us", path: "/hire-from-us" },
+              ].map((item) => (
+                <li key={item.path} className="nav-item">
+                  <Link 
+                    href={item.path} 
+                    className={`nav-link ${pathname === item.path ? "active-link" : ""}`}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
           {/* Right: Contact Us Button */}
           <div className="d-flex">
