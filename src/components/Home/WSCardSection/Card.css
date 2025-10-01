@@ -1,5 +1,5 @@
-/* /Card.module.css */
 .card {
+    background-color: #0B7077;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
@@ -13,12 +13,14 @@
     background-color: #0B7077;
     border: none;
     border-radius: 15px;
+    height: 300px;
 }
 
 .card-title {
     font-size: 36px;
     color: white;
-    font-family: var(--bs-body-font-family);
+    font-family: 'Montserrat', sans-serif !important;
+
 }
 
 .custom_orange_button_card {
@@ -26,10 +28,10 @@
     color: white;
     width: 130px;
     border-radius: 100px;
-    padding: 16px;
+    padding: 10px 16px;
     text-align: center;
     border: 0;
-    font-family: var(--bs-body-font-family);
+    font-family: 'Montserrat', sans-serif !important;
     transition: all 0.3s ease;
 }
 
@@ -43,12 +45,9 @@
     object-fit: contain;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-}
-
 
 @media (max-width: 768px) {
+
     .card-title {
         font-size: 24px;
     }

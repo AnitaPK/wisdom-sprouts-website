@@ -5,7 +5,7 @@ const alumni = [
       designation: "Front End Developer",
       company: "Coinbase",
       companyLogo: "/logo.png",
-      image: "/alumni/Alumni.png",
+      image: "/placements/llllll.png",
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ const alumni = [
       designation: "Front End Developer",
       company: "ClickUp",
       companyLogo: "/logo.png",
-      image: "/alumni/Alumni.png",
+      image: "/alumni/l.png",
     },
         {
       id: 3,
@@ -21,14 +21,14 @@ const alumni = [
       designation: "Front End Developer",
       company: "ClickUp",
       companyLogo: "/logo.png",
-      image: "/alumni/Alumni.png",
+      image: "/placements/llllll.png",
     },    {
       id: 4,
       name: "Kumod Kant",
       designation: "Front End Developer",
       company: "ClickUp",
       companyLogo: "/logo.png",
-      image: "/alumni/Alumni.png",
+      image: "/alumni/l.png",
     },    {
       id: 5,
       name: "Kumod Kant",

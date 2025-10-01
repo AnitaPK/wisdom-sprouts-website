@@ -1,0 +1,261 @@
+
+.testimonialSection {
+  background-color: #e0f2f1;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.mainTitle {
+  color: #0B7077;
+  font-size: 56px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 1.3;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.carouselWrapper {
+  position: relative;
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+
+/* --- Carousel Item Styling --- */
+.carouselContentRow {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px; 
+  align-items: stretch;
+  min-height: 400px; 
+}
+
+/* --- Left Column: Video/Image --- */
+.videoContainer {
+  position: relative;
+  width: 100%;
+  max-width: 450px; 
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* This container ensures the 16:9 aspect ratio */
+.videoPlaceholder {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
+    height: 0;
+}
+
+/* This ensures the thumbnail completely fills the 16:9 box */
+.videoPlaceholder .videoThumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CRITICAL FIX: The iframe must be absolutely positioned and cover 100% of its parent's dimensions. */
+.videoPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Match container border-radius */
+}
+
+/* New class for when the video is active */
+.videoPlayer {
+    /* Standard 16:9 aspect ratio container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoPlaceholder {
+    cursor: pointer;
+    /* Create an aspect ratio box for the video container (e.g., 16:9) */
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
+    height: 0;
+}
+
+.videoPlaceholder .videoThumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.playButtonOverlay {
+  /* Positioned absolutely within .videoPlaceholder */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 70px; 
+  height: 70px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.playIcon {
+  color: #ff7f00;
+  width: 35px;
+  height: 35px;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+/* --- Right Column: Content (Unchanged) --- */
+.testimonialContent {
+  padding-left: 30px; 
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.companyLogo {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.companyName {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.quote {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
+  font-style: italic;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+}
+
+.authorImage {
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.authorName {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.authorTitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+/* --- Custom Navigation Buttons (Unchanged) --- */
+.carouselNavBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff; 
+  border: none;
+  border-radius: 50%; 
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; 
+  color: #ff7f00;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 10; 
+  transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.carouselNavBtn:hover {
+  background-color: #ff7f00; 
+  color: #ffffff; 
+  transform: translateY(-50%) scale(1.05);
+}
+
+.customPrevBtn {
+  left: -25px;
+}
+
+.customNextBtn {
+  right: -25px;
+}
+
+/* Media Query for Responsiveness (Unchanged) */
+@media (max-width: 991.98px) {
+  .carouselContentRow {
+    min-height: auto;
+  }
+  .testimonialContent {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; 
+  }
+  .companyInfo, .authorInfo {
+    justify-content: center;
+  }
+  
+  .customPrevBtn {
+    left: 5px; 
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  .customNextBtn {
+    right: 5px; 
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  .mainTitle{
+    font-size: 24px;
+  }
+.carouselNavBtn {
+  top: 25%;
+
+}
+}

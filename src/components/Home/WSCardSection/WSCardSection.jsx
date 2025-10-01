@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Card from "./Card";
 import "./WSCardSection.css";
 
@@ -7,6 +7,7 @@ export default async function CardSection({  features } ) {
   return (
     <>
       <div className="container-fluid customContainer">
+        <div className="container">
         <h2 className="text-center">
           Things Students love <br />
           about Wisdom Sprouts
@@ -24,6 +25,7 @@ export default async function CardSection({  features } ) {
             </div>
           ))}
         </div>
+      </div>
       </div>
        
     </>

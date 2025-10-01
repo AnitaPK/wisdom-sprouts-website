@@ -10,7 +10,7 @@ const section2 = ({alumni}) => {
   
   return (
     <section className="container-fluid text-center py-5 custom-section2">
-      <div className="container w-50">
+      <div className="container w-75">
         <h2 className="fw-bold custom-text-color-green">
           Real Journeys. Lasting Impact.
         </h2>
@@ -28,13 +28,14 @@ const section2 = ({alumni}) => {
                 className="rounded mx-auto custom-image"
               />
               <div className="card-body">
-                <h6 className="fw-bold">{person.name.toUpperCase()}</h6>
-                <p className="text-muted mb-1">{person.designation}</p>
+                <h6 className="fw-bold alumniName">{person.name.toUpperCase()}</h6>
+                <p className="alumniDesignation mb-1">{person.designation}</p>
                 <div className="d-flex justify-content-center align-items-center mt-2">
                   <img
                     src={person.companyLogo}
                     alt={person.company}
-                    style={{ width: "90px", height: "auto" }}
+                    style={{ width: "120px", height: "auto" }}
+                    className='aumniCompany'
                   />
                 </div>
               </div>

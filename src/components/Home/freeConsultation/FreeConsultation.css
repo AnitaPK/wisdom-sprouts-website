@@ -1,0 +1,159 @@
+/* FreeConsultation.css */
+.free-section {
+  padding: 7rem 1rem;
+    background-image: url('/Landing page.png');
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+.free-heading {
+  font-size: 56px;
+  font-weight: 600;
+  color: #0B7077;
+    font-family: 'Montserrat', sans-serif !important;
+    line-height: 1;
+}
+.free-subtext {
+  font-size: 20px;
+  color: #0B7077;
+  margin-top: 20px;
+  margin-bottom: 7rem;
+    font-family: 'Montserrat', sans-serif !important;
+    max-width: 470px;
+
+}
+.free-list {
+  list-style: none;
+  padding: 0;
+}
+.free-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.8rem;
+  font-size: 18px;
+  color: #0B7077;
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+.free-list li::before {
+  content: '✔';
+  color: #000;
+  background-color: #ff6b35;
+  width: 15px;
+  height: 15px;
+  padding-left: 3px;
+  border-radius: 50%;
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 10px;
+
+}
+.free-card {
+  background: #0B7077; /* teal like in image */
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  max-width: 450px;
+}
+
+.free-card-title {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 17px;
+  color: white;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.form-label {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 0.3rem;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.free-input {
+  border-radius: 30px;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #D2E6E4;
+  color: #fff;
+}
+/* White placeholder */
+.free-input::placeholder,
+.phone-input::placeholder,
+select.free-input option {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+.free-input:focus{
+  background-color: #D2E6E4;
+  color: #000;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+/* Phone field */
+.free-phone {
+  display: flex;
+  align-items: center;
+  background: #D2E6E4;
+  border-radius: 30px;
+  padding-left: 0.75rem;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.country-code {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.free-btn {
+  background-color: #ff6b35;
+  color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  padding: 0.75rem;
+  transition: background 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.free-btn:hover {
+  background-color: #e55d2b;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .free-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  .free-subtext {
+    text-align: center;
+  }
+  .free-list {
+    text-align: left;
+  }
+  .free-card {
+    margin-top: 2rem;
+  }
+    .free-card {
+    padding: 1.5rem;
+  }
+  .free-input {
+    font-size: 0.85rem;
+  }
+  .free-btn {
+    font-size: 0.9rem;
+  }
+}

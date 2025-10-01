@@ -3,11 +3,11 @@ import styles from './MissionVision.css';
 
 const MissionVision = () => {
   return (
-    <section className="missionVisionSection custom-section" >
-      <div className="container py-5 my-3">
+    <section className=" custom-section" >
+      <div className="container">
         {/* Top Section */}
-        <div className="row align-items-center mb-5 pb-3">
-          <div className="col-lg-6 col-md-12 order-lg-1 order-md-2 order-2">
+        <div className="row align-items-center ">
+          <div className="col-lg-7 col-md-12 order-lg-1 order-md-2 order-2">
             <h2 className="sectionTitle">
               Empowering individuals with practical skills and industry expertise for career success.
             </h2>
@@ -18,13 +18,13 @@ const MissionVision = () => {
               experienced professionals looking to upskill.
             </p>
           </div>
-          <div className="col-lg-6 col-md-12 order-lg-2 order-md-1 order-1 text-center mb-4 mb-lg-0">
+          <div className="col-lg-5 col-md-12 order-lg-2 order-md-1 order-1 text-center mb-4 mb-lg-0">
             <div className="">
               <Image
                 src="/aboutUs/Mission.png" 
                 alt="Empowering Individuals"
-                width={386} 
-                height={457} 
+                width={286} 
+                height={357} 
                 objectFit="contain"
               />
             </div>
@@ -32,19 +32,17 @@ const MissionVision = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="row align-items-center pt-3">
-          <div className="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
-            <div className="imageCard">
+        <div className="row align-items-center">
+          <div className="col-lg-5 col-md-12 text-center mb-lg-0">
               <Image
-                src="/aboutUs/Vision.png" 
+                src="/aboutUs/vision.png" 
                 alt="Leading Platform"
-                width={386} 
-                height={457} 
+                width={286} 
+                height={357} 
                 objectFit="contain"
               />
-            </div>
           </div>
-          <div className="col-lg-6 col-md-12">
+          <div className="col-lg-7 col-md-12">
             <h2 className="sectionTitle">
               To be India&apos;s leading platform for career development, transforming lives through education and
               innovation.

@@ -7,7 +7,7 @@ import Image from 'next/image'
 const WhyChooseWS = () => {
   return (
     <section>
-        <div className="container text-center my-5">
+        <div className="container text-center mt-3">
       <h2 className="heading-why-choose w-75 mx-auto">Why Thousands Choose Wisdom Sprouts for Tech Careers</h2>
       <p className='paragrapg-why-choose'>We’re not just a training institute — we’re your career-building partner.</p>
     </div>
@@ -23,9 +23,9 @@ const WhyChooseWS = () => {
                 </div>
         
                 {/* Logos */}
-<div className="container py-4">
+<div className="container ">
   <div className="row text-center align-items-center">
-    <div className="col-12 col-md-2 mb-3 mb-md-0">
+    <div className="col-12 col-md-2 mb-1 mb-md-0">
       <div className="logoWrapper">
         <Image src="/logo.png" alt="Elastic" width={100} height={70} objectFit="contain" />
       </div>

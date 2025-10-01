@@ -43,7 +43,7 @@ const highlightsData = [
 
 const HighlightsGrid = () => {
   return (
-    <section className="highlightsSection py-5">
+    <section className="highlightsSection">
 
       <div className="container">
         <div className="row g-4">

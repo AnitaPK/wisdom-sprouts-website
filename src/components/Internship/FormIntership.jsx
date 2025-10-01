@@ -12,10 +12,11 @@ const FormIntership = () => {
           
           {/* Left Form Section */}
           <div className="col-md-6">
-            <h3 className="fw-bold custom-heading-job-form">Get Your 1st Job</h3>
+            <h3 className="fw-bold custom-heading-job-form">
+              Apply for the Internship Program
+              </h3>
             <p className="custom-para-job-form ">
-              Fill out the form to unlock job opportunities, resume reviews, and
-              mock interview support tailored just for you.
+              Ready to build real-world skills and land your dream tech role? Fill out this form and begin your journey with us.
             </p>
 
  <form>

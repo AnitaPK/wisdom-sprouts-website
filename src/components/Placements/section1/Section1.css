@@ -5,19 +5,54 @@
     font-weight: 600;
 }
 
-.custom-text-color-green {
-    color: #0b6b6b;
+.connectSection {
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif !important;
+  padding: 30px 20px;
+  /* text-align: center; */
+}
+
+.connectTitle {
+  font-size: 40px;
+  color: #085459;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500;
+}
+
+.connectHighlight {
+  color: #FD661F;
+}
+
+.connectText {
+  font-size: 16px;
+  color: #1E1E1E;
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif !important;
+}
+.cutomButtonOrange{
+      background-color: #FD661F !important;
+  color: white !important;
+  border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+
+.custom-text-color-green{
+    color: #141414 !important;
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-}
+    font-weight: 500 !important;
+  font-family: 'Montserrat', sans-serif !important;
 
-.custom-text-color-green-small {
-    color: #0b6b6b;
-    font-family: 'Montserrat', sans-serif;
+}
+.custom-text-color-green-small{
     font-size: 16px;
+    color: #0D0C10 !important;
+  font-family: 'Montserrat', sans-serif !important;
 
 }
-
 .custom-svg-placement {
     width: 53px;
     height: 53px;
@@ -30,9 +65,50 @@
 }
 
 .custom-label {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 24px;
-    width: 195px;
-    font-weight: 600;
-    color: #0b6b6b;
+    width: 200px;
+    font-weight: 550;
+    color: #0D0C10;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .connectTitle {
+    font-size: 32px;
+    text-align: center;
+    padding: 1px 10px;
+  }
+
+  .connectText {
+    font-size: 16px;
+    padding: 1px 10px;
+
+  }
+  .cutomButtonOrange{
+    display: block;
+    margin: 5px auto;
+    padding: 10px 40px;
+  }
+
+  .connectSection {
+    padding: 20px;
+  }
+.custom-text-color-green{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.custom-label {
+/* font-size: 16px;
+font-weight: 400;
+text-align: left; */
+}
+.custom-text-color-green-small{
+}
+.custom-svg-placement {
+
+}
 }

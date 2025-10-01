@@ -1,19 +1,19 @@
 /* styles/HighlightsGrid.module.css */
 
 .highlightsSection {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .cardWrapper {
   border-radius: 15px;
-  padding: 30px;
+  padding: 10px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 
 }
 
@@ -25,11 +25,13 @@
 .lightCard {
   background-color: #F7FDF9;
   color: #141414;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .darkCard {
-  background-color: #0B7077;
-  color: #ffffff;
+  background-color: #0B7077 !important;
+  color: #fff !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .numberImageWrapper {
@@ -37,16 +39,18 @@
 }
 
 .cardTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 550;
+  margin-bottom: 7px;
   line-height: 1.3;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .cardDescription {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.6;
   opacity: 0.9;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Responsive adjustments */

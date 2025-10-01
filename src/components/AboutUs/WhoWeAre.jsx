@@ -4,10 +4,10 @@ import Image from 'next/image'
 const WhoWeAre = () => {
   return (
     <section className='custom-section mb-3 pb-5'>
-      <div className="container">
+      <div className="container w-75">
         <span class="badge rounded-pill custom-green-badge">Who We Are</span>
       </div>
-      <div className="container py-5">
+      <div className="container w-75 py-4">
         <div className="row">
             <div className="col-12 col-md-6">
                 <div className="custom-left-content">
@@ -24,7 +24,7 @@ const WhoWeAre = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container w-75">
         {/* Stats Section */}
         <div className="card statsCard mb-5">
           <div className="card-body">

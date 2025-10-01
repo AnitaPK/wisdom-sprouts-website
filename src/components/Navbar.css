@@ -1,21 +1,30 @@
 
 .custom_navbar{
     background-color: transparent;
-    font-weight: 700;
+    /* font-weight: 600; */
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px;
+
 }
 
 .nav-link {
-  color: #0b4b4b; /* default font color */
+  color: #252641; /* default font color */
   transition: color 0.3s;
+  font-family: 'Montserrat', sans-serif !important;
+
 }
 
 .nav-link:hover {
   color: #FD661F; /* hover color */
+  font-family: 'Montserrat', sans-serif !important;
+
 }
 
 .active-link {
-  color: #FD661F ; /* active link color */
+  color: #FD661F !important; /* active link color */
   font-weight: 600; /* optional bold */
+  font-family: 'Montserrat', sans-serif !important;
+
 }
 
 .custom_orange_button{
@@ -28,6 +37,8 @@
     text-align: center;
     border: 0;
     text-decoration: none; 
+  font-family: 'Montserrat', sans-serif !important;
+
 }
 .custom_white_button{
    background-color: #D2E6E4;
@@ -37,4 +48,6 @@
     border-radius: 100px;
     padding: 16px;
     text-align: center;
+  font-family: 'Montserrat', sans-serif !important;
+
 }

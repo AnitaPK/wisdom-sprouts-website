@@ -16,7 +16,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="pt-4 mt-5 border-top custom-footer">
+    <footer className="pt-4 mt-2 border-top custom-footer">
       <Container>
         <Row className="text-center text-md-start">
           {/* Left Column */}

@@ -1,25 +1,28 @@
 "use client";
 import Image from "next/image";
-import { Button } from "react-bootstrap";
-import './Section1.css'
+import "./Section1.css";
 
 const AlumniHighlight = () => {
   return (
-    <section className="container p-5">
-      <div className="row align-items-center">
+    <section className="container p-0">
+      <div className="row">
         {/* Left Content */}
         <div className="col-md-6">
-          <h5 className="custom-text-color-orange fw-bold">Real Journeys Of Students</h5>
-          <h2 className="fw-bold custom-text-color-green">
-           Who Transformed Their Careers with Wisdom Sprouts
-          </h2>
-          <p className="mt-3 custom-text-color-green-small">
-            Every success story you see here began with a single decision—to trust the process, 
-            believe in growth, and choose Wisdom Sprouts
-          </p>
-          <Button className="mt-3 px-4 py-2 rounded-pill custom-orange-button">
-            Join us
-          </Button>
+          <div className="container connectSection">
+            <h1 className="connectTitle">
+              <span className="connectHighlight">
+                Real Journeys Of Students {" "}
+              </span>
+              Who Transformed Their Careers with Wisdom Sprouts
+            </h1>
+            <p className="connectText">
+              Every success story you see here began with a single decision—to
+          trust the process, believe in growth, and choose Wisdom Sprouts
+            </p>
+            <div>
+              <button className="cutomButtonOrange">Join Us</button>
+            </div>
+          </div>
         </div>
 
         {/* Right Image */}

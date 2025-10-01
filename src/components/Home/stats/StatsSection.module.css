@@ -1,0 +1,59 @@
+.statsSection {
+    background-image: url('/Landing page.png');
+    padding-top: 80px;
+    padding-bottom: 80px;
+  font-family: 'Montserrat', sans-serif !important;
+  /* position: relative; */
+}
+
+.title {
+  color: #0B7077;
+  /* font-weight: 600; */
+  font-size: 54px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.cardBox {
+  background-color: #eaf3f2;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  color: #0B7077;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.cardValue {
+  color: #0B7077;
+  font-weight: 700;
+  font-size: 54px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .cardValue {
+    font-size: 1.4rem;
+  }
+
+  .cardBox {
+    max-width: 200px;
+  }
+}

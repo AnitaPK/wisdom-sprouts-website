@@ -4,17 +4,21 @@ import styles from './SampleHeader.module.css';
 
 const MyComponent = () => {
   return (
-    <div className={`container ${styles.connectSection}`}>
+    <div className="container connectSection">
 
 
-      <h1 className={styles.connectTitle}> <span className={styles.connectHighlight}> Let’s Connect </span>
-      And Build Something Great Together</h1>
-      <p className={styles.connectText}>
-        Whether you’re a student, recruiter, or academic partner — we’re here 
-              to help you take the next step.
+      <h1 className="connectTitle"> <span className="connectHighlight"> 
+        Real Journeys Of Students
+        </span>
+           Who Transformed Their Careers with Wisdom Sprouts
+
+      </h1>
+      <p className="connectText">
+        Every success story you see here began with a single decision—to trust the process, 
+            believe in growth, and choose Wisdom Sprouts
       </p>
       <div>
-      <button className={styles.cutomButtonOrange}>Get Started</button>
+      <button className="cutomButtonOrange">Join Us</button>
     </div>
     </div>
   );

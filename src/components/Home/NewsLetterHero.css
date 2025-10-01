@@ -1,0 +1,113 @@
+        .newsletter-hero {
+            /* background: #e6f6f4; */
+            padding-top: 28px;
+            /* padding-bottom: 28px; */
+            position:relative;
+            top:-110px
+        }
+
+        .card-wrap {
+            background: #ffffff;
+            border-radius: 22px;
+            padding: 2.25rem;
+            box-shadow: 0 10px 30px rgba(18, 33, 37, 0.06);
+        }
+
+        .illustration .hero-img {
+            /* prefer 600px on laptop/desktop, but never exceed container width */
+            width: 600px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .title {
+            margin: 0 0 0.75rem 0;
+            color: #394452;
+            font-family: 'averta-Bold' 'Montserrat', sans-serif !important;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 1.03;
+        }
+
+        .desc {
+            margin: 0;
+            color: #6a8b8b;
+            font-size: 0.98rem;
+            max-width: 520px;
+            font-family: 'Montserrat', sans-serif !important;
+        }
+
+        /* Subscribe input + button */
+        .subscribe-input {
+            display: flex;
+            max-width: 560px;
+            background: #fff;
+            border-radius: 40px;
+            box-shadow: 0 8px 28px rgba(35, 50, 60, 0.12);
+            overflow: hidden;
+        }
+
+        .email-input {
+            flex: 1;
+            border: none;
+            border-radius: 40px 0 0 40px;
+            padding: 0.95rem 1.25rem;
+            font-size: 0.95rem;
+            color: #58666b;
+            background: transparent;
+        }
+
+        .email-input::placeholder {
+            color: #bfc9c9;
+        }
+
+        .email-input:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .subscribe-btn {
+            border-radius: 0 25px 25px 25px;
+            width: 140px;
+            background: #FD661F;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            transition: background 0.3s ease;
+        }
+
+        .subscribe-btn:hover {
+            background: #FD661F;
+        }
+
+        @media (max-width: 991.98px) {
+            .title {
+                font-size: 36px;
+            }
+
+            .desc {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .title {
+                font-size: 34px;
+            }
+
+            .desc {
+                font-size: 10px;
+            }
+
+            /* .subscribe-input { flex-direction: column; border-radius: 20px; }
+          .email-input { border-radius: 20px; width: 100%; margin-bottom: 10px; }
+          .subscribe-btn { border-radius: 20px; width: 100%; } */
+            .illustration .hero-img {
+                width: 300px;
+                max-width: 100%;
+                margin: 0 auto;
+                /* center on mobile */
+                display: block;
+            }
+        }

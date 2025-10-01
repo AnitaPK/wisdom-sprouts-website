@@ -3,15 +3,17 @@
         padding-top:180px;
 }
 .custom-text-color-green {
-    color: #0b6b6b;
+    color: #141414 !important;
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 500 !important;
+  font-family: 'Montserrat', sans-serif !important;
+
 }
 
 .custom-text-color-green-small {
-    color: #0b6b6b;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+   font-size: 16px;
+    color: #0D0C10 !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .custom-card{
@@ -22,14 +24,46 @@
   /* flex-direction: column !important; */
   /* justify-content: flex-end !important; */
     padding-top: 120px !important;
+    background-color: white !important;
 }
 
 .custom-image{
     width: 170px;
     height: 171px;
-    border-radius: 8px;
+    border-radius: 10px;
     position: absolute;
     top: -40px;
     left: 50px;
     /* transform: translateX(-50%); */
+    box-shadow:  4px 4px 10px rgba(128, 128, 128, 0.4),   
+              -4px 4px 10px rgba(128, 128, 128, 0.4);
+}
+.alumniName{
+    color: #181817 !important;
+    font-size: 23px !important;
+  font-family: 'Montserrat', sans-serif !important;
+font-weight: 700 !important;
+padding-top: 10px !important;
+}
+.alumniDesignation{
+    color: #323232 !important;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+.aumniCompany{
+    width: 192px;
+    height: 18px;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  
+.custom-text-color-green{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+
 }
