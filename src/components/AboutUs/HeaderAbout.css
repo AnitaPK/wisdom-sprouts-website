@@ -1,7 +1,7 @@
 .connectSection {
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif !important;
-  padding: 40px;
+  padding: 40px 20px;
   /* text-align: center; */
 }
 
@@ -27,7 +27,7 @@
   color: white !important;
   border: none;
     border-radius: 30px;
-    padding: 0.6rem 1.4rem;
+    padding: 0.6rem 3rem !important;
   font-family: 'Montserrat', sans-serif !important;
 
 }

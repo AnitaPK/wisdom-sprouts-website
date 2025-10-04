@@ -8,21 +8,26 @@
     overflow: hidden;
     height: 600px;
     /* padding: 40px 30px !important; */
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Montserrat', sans-serif !important;
+    /* margin: 0px; */
+}
+.custom-padding{
+    padding-bottom: 5rem !important;
 }
 
 .pill {
     display: inline-block;
     background: #fff;
     padding: 0.35rem 0.9rem;
-    border-radius: 999px;
+    border-radius: 20px !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     font-size: 0.85rem;
     width: 236px;
     text-align: center;
     font-size: 18px;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif !important;
+
 }
 .hero-inner{
     position: relative;
@@ -33,7 +38,7 @@
     margin: 0.75rem 0;
     font-size: 64px;
     /* text-align: center; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 
 }
 
@@ -44,7 +49,7 @@
     /* opacity: 0.85; */
     max-width: 500px;
     font-size: 32px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 
 }
 
@@ -53,15 +58,20 @@
     border: none;
     color: white;
     border-radius: 30px;
-    padding: 0.6rem 1.4rem;
+    padding: 0.6rem 1.7rem;
     font-family: 'Montserrat', sans-serif;
+
+}
+.custom-btn-orange:hover{
+    background: #ff6b2d;
+    color: white;
 
 }
 
 .btn-outline-custom {
     border: 2px solid #0B7077;
     border-radius: 30px;
-    padding: 0.6rem 1.4rem;
+    padding: 0.6rem 1.7rem;
     color: #08302f;
     font-family: 'Montserrat', sans-serif;
 }
@@ -80,9 +90,9 @@
     top: -110px !important;
     left: 20px !important;
     /* z-index: 1000; */
+    
 }
 .small-calender{
-
     position: absolute;
     right: 100px;
     top: 17%;

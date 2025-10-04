@@ -1,0 +1,16 @@
+.connectSection {
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 40px;
+    /* text-align: center; */
+}
+
+.cutomButtonOrange {
+    background-color: #FD661F !important;
+    color: white !important;
+    border: none;
+    border-radius: 30px;
+    padding: 0.6rem 3rem;
+    font-family: 'Montserrat', sans-serif !important;
+}
+

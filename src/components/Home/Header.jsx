@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function Header() {
   return (
     <>
-      <section className="hero-section container-fluid  mt-0">
-        <div className="pb-5">
-          <div className="hero-inner d-flex flex-column flex-md-row align-items-center justify-content-between ms-5">
+      <section className="hero-section container-fluid  mt-0 ">
+        <div className="custom-padding">
+          <div className="hero-inner d-flex flex-column flex-md-row align-items-center justify-content-between ms-5 mb-5">
             <div className="hero-info text-center text-md-start mb-4 mb-md-0">
               <span className="pill">Never stop learning</span>
               <h1 className="hero-title">
@@ -36,6 +36,8 @@ export default function Header() {
                 priority
                 fill
                 className="main-img"
+                // width= {400}
+    // height= {400}
               />
             </div>
 

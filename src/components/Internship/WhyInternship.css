@@ -7,24 +7,24 @@
 .reason-number {
   font-size: 38px;
   font-weight: bold;
-  color: #074347; /* teal */
+  color: #074347; 
   min-width: 40px;
     font-family: 'Montserrat', sans-serif;
-
 }
+
 
 .custom-title {
   color: #074347;
   font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Montserrat', sans-serif
 }
+
 .custom-descri{
   color: #074347;
-font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
+
 .img-fluid {
   border-radius: 12px;
 }

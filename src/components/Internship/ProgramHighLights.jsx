@@ -43,21 +43,21 @@ const ProgramHighLights = () => {
   ];
   return (
     <section>
-      <div className="container w-75 mx-auto mt-5 text-center ">
-        <h2 className="fw-bold custom-text-color-green">Program Highlights</h2>
+      <div className="container mx-auto mt-5 text-center ">
+        <h2 className=" custom-text-color-green1">Program Highlights</h2>
         <p className="mt-3 custom-text-color-green-small">
           Everything you need to transform from a learner to a working
           professional.
         </p>
       </div>
-      <div className="container w-75">
+      <div className="container">
         <div className="row g-3">
           {highlights.map((item, index) => (
             <div className="col-12" key={index}>
-              <div className="card shadow-sm border-0 p-3 rounded-3 custom-card-program">
-                <h5 className="fw-bold custom-heading">{item.title}</h5>
+              <div className=" border-0 rounded-3 custom-card-program p-3">
+                <h5 className="custom-heading">{item.title}</h5>
                 {item.subtitle && (
-                  <p className="text-muted mb-3 custom-subtitle">{item.subtitle}</p>
+                  <p className="mb-3 custom-subtitle">{item.subtitle}</p>
                 )}
                 <p className="mb-0 custom-paragraph">{item.description}</p>
               </div>

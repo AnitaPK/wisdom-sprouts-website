@@ -7,24 +7,24 @@ const WhoWeAre = () => {
       <div className="container w-75">
         <span class="badge rounded-pill custom-green-badge">Who We Are</span>
       </div>
-      <div className="container w-75 py-4">
+      <div className="container py-2">
         <div className="row">
             <div className="col-12 col-md-6">
-                <div className="custom-left-content">
+                <p className="custom-left-content">
                     Empowering Careers with Practical Learning & Real Results Since 2014
-                </div>
+                </p>
             </div>
-            <div className="col col-md-6">
-                <div className="custom-right-content">
+            <div className="col-12 col-md-6">
+                <p className="custom-right-content">
                     A joint venture of Voracii Wisdom Solutions Pvt. Ltd. and ScaleFull Technologies 
                     LLP, we’re proud partners of MongoDB and IBM — a testament to our technical 
                     excellence and industry relevance.
-                </div>
+                </p>
             </div>
         </div>
       </div>
 
-      <div className="container w-75">
+      <div className="container ">
         {/* Stats Section */}
         <div className="card statsCard mb-5">
           <div className="card-body">

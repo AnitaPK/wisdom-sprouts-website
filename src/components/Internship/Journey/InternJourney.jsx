@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./InternJourney.css";
 
 const steps = [
@@ -12,15 +11,17 @@ const steps = [
 
 const InternJourney = () => {
   return (
-    <div className="container w-75 my-5">
+    <div className="container my-5">
       <div className="journey-box p-4 rounded-4">
-        <h5 className="text-white fw-bold mb-4">Where Our Interns End Up</h5>
-        <hr />
-        <div className="journey-line d-flex justify-content-between position-relative">
+        <h5 className="journey-title">Where Our Interns End Up</h5>
+        <hr className="journey-hr" />
+        <div className="journey-line">
           {steps.map((step, index) => (
-            <div key={index} className="text-center journey-step">
+            <div key={index} className="journey-step">
               <div className="circle">{step.number}</div>
               <div className="label">{step.label}</div>
+              {/* connector line after each step except last */}
+              {index !== steps.length - 1 && <div className="connector"></div>}
             </div>
           ))}
         </div>

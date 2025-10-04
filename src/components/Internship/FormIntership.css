@@ -2,7 +2,7 @@
 .job-form-wrapper {
     /* background-color: #B3D3D5; */
     background-image: url('/Landing page.png');
-    padding: 80px;
+    padding: 50px 20px;
 }
 
 .custom-container-job-form {
@@ -11,17 +11,16 @@
 }
 
 .custom-heading-job-form {
-    color: #0b6b6b;
+    color: #04272A;
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .custom-para-job-form {
     color: #0b6b6b;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
-
 
 /* Input & Select Styling */
 .custom-input {
@@ -32,7 +31,7 @@
   font-size: 14px;
   color: #0b6b6b;
   box-shadow: none;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -42,7 +41,7 @@
 }
 
 .custom-input:focus {
-  border: 2px solid #0b6b6b; /* light blue focus */
+  border: 2px solid #0b6b6b;
   outline: none;
   box-shadow: none;
 }
@@ -61,4 +60,19 @@
 .btn-submit:hover {
   background-color: #ff5608;
   color: white;
+}
+
+
+@media (max-width: 768px) {
+
+.job-form-wrapper {
+padding: 50px 0px;
+
+}
+.custom-container-job-form {
+  width:100%
+}
+.custom-heading-job-form {
+    font-size: 20px;
+}
 }

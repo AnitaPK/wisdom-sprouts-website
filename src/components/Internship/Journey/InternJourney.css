@@ -1,49 +1,119 @@
 .journey-box {
-  background-color: #0e7577; /* teal background */
-  color: white;
+  background-color: #0e7577;
+  color: #fff;
+  border-radius: 12px;
   position: relative;
 }
 
-.journey-line::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 10%;
-  right: 10%;
-  height: 9px;
-  background: linear-gradient(to right, #ddd, #eee);
-  z-index: 1;
-  border-radius: 5px;
+.journey-title {
+  margin: 0 0 6px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
+.journey-hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin-bottom: 16px;
+}
+
+/* step container */
+.journey-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* each step */
 .journey-step {
   position: relative;
-  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
 }
 
 .circle {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: #ff5a1f;
+  background: #ff5a1f;
   color: #fff;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  border: 3px solid #ddd;
-  box-shadow: 0 0 10px #fff
+  border: 3px solid #fff;
+  z-index: 2;
 }
 
 .label {
-  margin-top: 8px;
-  background: white;
+  margin-top: 1rem;
+  background: #fff;
   color: #ff5a1f;
   font-weight: 600;
-  padding: 2px 10px;
-  border-radius: 15px;
-  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
   font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* connector line */
+.connector {
+  position: absolute;
+  background: linear-gradient(to right, #ddd, #eee);
+  z-index: 1;
+}
+
+/* ---------- Desktop (Horizontal) ---------- */
+@media (min-width: 769px) {
+  .journey-line {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .journey-step {
+    align-items: center;
+  }
+
+  .connector {
+    top: 16px; 
+    left: 50%;
+    right: -50%;
+    height: 11px;
+    border-radius: 3px;
+  }
+}
+
+/* ---------- Mobile (Vertical) ---------- */
+@media (max-width: 768px) {
+  .journey-line {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px; 
+  }
+
+  .journey-step {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .circle {
+    margin-right: 12px;
+  }
+
+  .label {
+    margin: 0;
+  }
+
+  .connector {
+    top: 40px; 
+    left: 20px;
+    width: 3px;
+    height: 50px; 
+    border-radius: 3px;
+    background: linear-gradient(to bottom, #ddd, #eee);
+  }
 }

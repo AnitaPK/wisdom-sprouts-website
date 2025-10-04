@@ -1,8 +1,9 @@
 import React from 'react'
 import './InternshipPage.css'
+import './HeaderIntership.css'
 import Image from 'next/image'
 
-const HeaderIntership = () => {
+const HeaderIntership = ({ onApplyClick }) => {
   return (
     <section className="intership-section py-5">
       <div className="container w-75">
@@ -13,10 +14,12 @@ const HeaderIntership = () => {
                 Launch Your Tech Career with <br />
               <span className="intership-highlight">Hands-On Internships</span>
             </h2>
-            <p className="mt-3 text-muted">
+            <p className="mt-3 intership-text">
               Real projects. Real mentorship. Real career outcomes.
             </p>
-            <button className="btn btn-connect mt-3">Apply Now</button>
+            <button className="cutomButtonOrange mt-3 " onClick={onApplyClick}>
+              Apply Now
+            </button>
           </div>
 
           {/* Right Side: Image */}

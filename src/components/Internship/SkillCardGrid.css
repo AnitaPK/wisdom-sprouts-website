@@ -2,19 +2,18 @@
 
 .cardSection {
     background-image: url('/Landing page.png');
-    padding: 80px;
+    padding: 50px 10px;
 }
 
 .cardContainer {
-    padding: 40px 20px;
+    padding: 40px 10px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .customCard {
     background-color: #fff;
-    color: #f0f8ff;
+    /* color: #f0f8ff; */
     border-radius: 20px;
     padding: 25px;
     height: 100%;
@@ -27,7 +26,7 @@
 .alternateCard {
     background-color: #0B7077;
     /* color: ; */
-     border-radius: 20px;
+    border-radius: 20px;
     padding: 25px;
     height: 100%;
     display: flex;
@@ -43,22 +42,26 @@
 
 .customBadge {
     background-color: #0B7077;
-    color: #fff;
-    padding: 8px 15px;
+    color: #fff !important;
+    padding: 12px 17px;
     /* border-radius: 20px; */
     /* font-size: 0.85em; */
     font-weight: bold;
     display: inline;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .alternateBadge {
     background-color: #E7F1F1;
-    color: #0B7077;
-    padding: 8px 10px;
+    color: #0B7077 !important;
+    padding: 12px 17px;
     /* border-radius: 20px; */
     /* font-size: 0.85em; */
     font-weight: bold;
     display: inline;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .cardTitle {
@@ -66,6 +69,8 @@
     font-weight: bold;
     margin-bottom: 10px;
     color: #000;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .alternateCardTitle {
@@ -73,25 +78,33 @@
     font-weight: bold;
     margin-bottom: 10px;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .cardTools {
-    font-size: 0.9em;
+    font-size: 18px;
     color: #053236;
     margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .alternateCardTools {
-    font-size: 0.9em;
+    font-size: 18px;
     color: #E7F1F1;
     margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .cardDescription {
-    font-size: 1em;
+    font-size: 12px;
     line-height: 1.6;
     flex-grow: 1;
     color: #939599;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .alternateCardDescription {
@@ -99,4 +112,30 @@
     line-height: 1.6;
     flex-grow: 1;
     color: #E7F1F1;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+.customCard{
+    padding: 15px;
+}
+.alternateCard{
+    padding: 15px;
+}
+.customBadge{
+    padding: 10px;
+}
+.alternateBadge{
+    padding: 10px;
+}
+.cardTitle {
+    margin-bottom: 3px;
+}
+.cardTools, .alternateCardTools {
+    margin-bottom: 5px;
+}
 }

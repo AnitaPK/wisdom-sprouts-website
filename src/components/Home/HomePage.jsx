@@ -5,11 +5,13 @@ import PopularCourses from './courses/PopularCourses'
 import FreeConsultation from './freeConsultation/FreeConsultation'
 import NewsletterHero from './NewsLetterHero'
 import TestimonialCarouselHome from './testimonial/TestimonialCorouselHome'
+import CoursesComponent from './courses/CourseCategoryTab'
 
-const HomePage = () => {
+const HomePage = ({courseCategories}) => {
   return (
     <>
-      <PopularCourses />
+      {/* <PopularCourses /> */}
+      <CoursesComponent categories={courseCategories} />
       <StatsSection />
       <TestimonialCarouselHome />
       <FreeConsultation />

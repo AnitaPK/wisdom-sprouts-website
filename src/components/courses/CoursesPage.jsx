@@ -1,10 +1,11 @@
 import React from 'react'
+import CoursesList from './CoursesList'
 
-const CoursesPage = () => {
+const CoursesPage = ({AllCourses}) => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <CoursesList AllCourses={AllCourses} />
+    </>
   )
 }
 

@@ -1,90 +1,76 @@
 
-  const categories = [
-    {
-      title: 'Featured Courses',
-      courses: [
+export const coursesList = [
         {
           id:1,
           title: 'Product Management Basic - Course',
           students: 40,
+          category: 'Featured Courses',
           img: '/home/course/courseOne.png',
           description: 'Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.',
         },
         {
           id:2,
           title: 'BM Data Science Professional Certificate',
+          category: 'Featured Courses',
           students: 11,
           img: '/home/course/courseTwo.png',
           description: 'Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.',
         },
         {
           id:3,
-
           title: 'The Science of Well-Being',
+          category: 'Featured Courses',
           students: 234,
           img: '/home/course/courseThree.png',
           description: 'Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.',
         },
-      ],
-    },
-    {
-      title: 'Full Stack Web Development Courses',
-      courses: [
+
         {
           id:4,
-
           title: 'Product Management Basic - Course',
+          category: 'Full Stack Web Development Courses',
           students: 40,
           img: '/home/course/courseOne.png',
           description: 'Learn full stack development from scratch with industry experts.',
         },
         {
           id:5,
-
           title: 'BM Data Science Professional Certificate',
+          category: 'Full Stack Web Development Courses',
           students: 11,
           img: '/home/course/courseOne.png',
           description: 'Build scalable apps and APIs with Node.js, React, and MongoDB.',
         },
         {
           id:6,
-
           title: 'The Science of Well-Being',
+          category: 'Full Stack Web Development Courses',
           students: 234,
           img: '/home/course/courseOne.png',
           description: 'A refreshing take on balancing career and personal growth.',
         },
-      ],
-    },
-    {
-      title: 'Essential Programming',
-      courses: [
         {
           id:7,
-
           title: 'Product Management Basic - Course',
+          category: 'Essential Programming',
           students: 40,
           img: '/home/course/courseOne.png',
           description: 'Master essential programming languages like Python, Java, and C++.',
         },
         {
           id:8,
-
           title: 'BM Data Science Professional Certificate',
+          category: 'Essential Programming',
           students: 11,
           img: '/home/course/courseOne.png',
           description: 'Learn algorithms, data structures, and problem solving skills.',
         },
         {
           id:9,
-
           title: 'The Science of Well-Being',
+          category: 'Essential Programming',
           students: 234,
           img: '/home/course/courseOne.png',
           description: 'Enhance focus and productivity while coding.',
         },
-      ],
-    },
   ];
-
-  export default categories

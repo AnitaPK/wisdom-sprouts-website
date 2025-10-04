@@ -53,7 +53,7 @@ const Stats = () => {
 <div className="container w-75">
       <div className="row mt-4">
         {stats.map((item, index) => (
-          <div key={index} className="col-md-3 col-6 mb-4">
+          <div key={index} className="col-md-3 col-12 mb-4">
             <div className="container">
               <div className="custom-svg-placement mx-auto">
                 {item.icon}

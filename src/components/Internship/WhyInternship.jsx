@@ -41,7 +41,7 @@ const WhyInternship = () => {
   return (
     <div className="container my-5">
       <div className="text-center mb-4">
-        <h2 className="fw-bold custom-text-color-green">Why Choose This Internship?</h2>
+        <h2 className="fw-bold custom-text-color-green1">Why Choose This Internship?</h2>
         <p className="custom-text-color-green-small">
           It’s not just training. It’s transformation.
         </p>
@@ -54,7 +54,7 @@ const WhyInternship = () => {
             <div className="reason-box mb-4 d-flex" key={index}>
               <h4 className="reason-number">{item.number}</h4>
               <div>
-                <h6 className="fw-bold custom-title">{item.title}</h6>
+                <h6 className=" custom-title">{item.title}</h6>
                 <p className="custom-descri">{item.desc}</p>
               </div>
             </div>
@@ -64,9 +64,9 @@ const WhyInternship = () => {
         {/* Center image */}
         <div className="col-md-4 text-center">
           <img
-            src="https://via.placeholder.com/300x200.png?text=Internship+Image"
+            src="/intership/userratingwithphoto.png"
             alt="Internship"
-            className="img-fluid rounded-3 shadow"
+            className="img-fluid rounded-3"
           />
         </div>
 
@@ -76,7 +76,7 @@ const WhyInternship = () => {
             <div className="reason-box mb-4 d-flex" key={index}>
               <h3 className="reason-number">{item.number}</h3>
               <div>
-                <h6 className="fw-bold custom-title">{item.title}</h6>
+                <h6 className=" custom-title">{item.title}</h6>
                 <p className="custom-descri">{item.desc}</p>
               </div>
             </div>

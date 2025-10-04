@@ -14,12 +14,12 @@ const skillData = [
 const SkillCardGrid = () => {
   return (
     <section className="cardSection mt-5">
-        <div className="container w-75 mx-auto text-center">
-            <h2 className="fw-bold custom-text-color-green">Choose Your Specialization</h2>
+        <div className="container  mx-auto text-center">
+            <h2 className="custom-text-color-green1">Choose Your Specialization</h2>
             <p className="mt-3 custom-text-color-green-small">Learn what aligns with your interest and future goals.</p>
         </div>
     <div className="cardContainer">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           {skillData.map((skill, index) => (
             <div key={index} className="col-12 col-md-6 col-lg-4 mb-3">
