@@ -12,8 +12,9 @@ const FormIntership = () => {
       <div className="container my-3 custom-container-job-form">
         <div className="row align-items-center rounded shadow py-3">
           {/* Left Form Section */}
-          <div className="col-md-6 col-12">
-            <h3 className="custom-heading-job-form my-3 p-2">
+          <div className="col-md-6 col-12 ">
+            <div className="px-4">
+            <h3 className="custom-heading-job-form my-2 ">
               Apply for the Internship Program
             </h3>
             <p className="custom-para-job-form ">
@@ -21,7 +22,7 @@ const FormIntership = () => {
               Fill out this form and begin your journey with us.
             </p>
 
-            <form>
+            <form >
               {/* Full Name */}
               <div className="mb-3">
                 <input
@@ -83,6 +84,7 @@ const FormIntership = () => {
                 Apply Now
               </button>
             </form>
+            </div>
           </div>
 
           {/* Right Image Section */}
@@ -90,8 +92,8 @@ const FormIntership = () => {
             <Image
               src="/placements/JobForm.png"
               alt="Student"
-              width={550}
-              height={550}
+              width={516}
+              height={536}
               className="img-fluid rounded"
             />
           </div>

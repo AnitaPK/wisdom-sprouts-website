@@ -66,7 +66,7 @@ const WhyInternship = () => {
           <img
             src="/intership/userratingwithphoto.png"
             alt="Internship"
-            className="img-fluid rounded-3"
+            className="img-fluid rounded-3 custom-image"
           />
         </div>
 

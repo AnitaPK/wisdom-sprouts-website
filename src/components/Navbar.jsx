@@ -6,6 +6,18 @@ import { usePathname } from "next/navigation";
 import "./Navbar.css"
 export default function Navbar() {
    const pathname = usePathname();
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/aboutus" },
+    { name: "Courses", path: "/courses" },
+    { name: "Placements", path: "/placements" },
+    { name: "Internship", path: "/internship" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Hire From Us", path: "/hire-from-us" },
+  ];
+
+
+
   return (
     <div className=""
       style={{
@@ -45,15 +57,8 @@ export default function Navbar() {
         {/* Middle Menu + Right Button (collapsible) */}
         <div className="collapse navbar-collapse" id="navbarNav">
 <ul className="navbar-nav mx-auto">
-              {[
-                { name: "Home", path: "/" },
-                { name: "About Us", path: "/aboutus" },
-                { name: "Courses", path: "/courses" },
-                { name: "Placements", path: "/placements" },
-                { name: "Internship", path: "/internship" },
-                { name: "Gallery", path: "/gallery" },
-                { name: "Hire From Us", path: "/hire-from-us" },
-              ].map((item) => (
+              {navItems.map((item) => (
+                
                 <li key={item.path} className="nav-item">
                   <Link 
                     href={item.path} 

@@ -8,15 +8,16 @@
 
 .card-title{
     font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
+
 /* Custom styles for the subtitle */
 .card-text {
   color: #fff;
   font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Custom styles for the apply button */
@@ -32,3 +33,9 @@ background-color: #FD661F;
 
 }
 
+@media (max-width: 768px) {
+.card-text {
+  line-height: 0.9;
+}
+
+}

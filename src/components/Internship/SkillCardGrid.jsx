@@ -19,7 +19,7 @@ const SkillCardGrid = () => {
             <p className="mt-3 custom-text-color-green-small">Learn what aligns with your interest and future goals.</p>
         </div>
     <div className="cardContainer">
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           {skillData.map((skill, index) => (
             <div key={index} className="col-12 col-md-6 col-lg-4 mb-3">

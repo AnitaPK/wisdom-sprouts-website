@@ -44,8 +44,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #fff;
+  border: 5px solid #fff;
   z-index: 2;
+  box-shadow: 0px 0px 2px 2px rgb(201, 201, 201);
 }
 
 .label {
@@ -57,6 +58,8 @@
   border-radius: 20px;
   font-size: 0.9rem;
   white-space: nowrap;
+  width: 90px;
+  text-align: center;
 }
 
 /* connector line */
@@ -81,7 +84,7 @@
     top: 16px; 
     left: 50%;
     right: -50%;
-    height: 11px;
+    height: 12px;
     border-radius: 3px;
   }
 }
@@ -101,7 +104,7 @@
   }
 
   .circle {
-    margin-right: 12px;
+    margin-right: 1.5rem;
   }
 
   .label {

@@ -11,7 +11,7 @@
   color: #252641; /* default font color */
   transition: color 0.3s;
   font-family: 'Montserrat', sans-serif !important;
-
+  font-weight: 600;
 }
 
 .nav-link:hover {
@@ -50,4 +50,10 @@
     text-align: center;
   font-family: 'Montserrat', sans-serif !important;
 
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse.show {
+    margin-bottom: 200px; /* adjust height depending on your menu items */
+  }
 }

@@ -50,6 +50,8 @@ const Footer = () => {
             <p className="custom-get-in-touch"><FaMapMarkerAlt className="me-2 custom-icon-color" />406, White Square, Wakad-Hinjawadi Road, Pune, Maharashtra 411045</p>
             <p><FaEnvelope className="me-2 custom-icon-color" />helpdesk@wisdomsprouts.in</p>
             <p><FaPhoneAlt className="me-2 custom-icon-color" />+91-7770043825</p>
+            <p><FaPhoneAlt className="me-2 custom-icon-color" />+91-7770023825</p>
+
           </Col>
 
           {/* Social Media */}
@@ -73,7 +75,6 @@ const Footer = () => {
                   </a>
               <a href="https://www.youtube.com/@wisdomsprouts1276">
                 <span className="custom-icon-social"><Image src="/social-Icons/Youtube.png" width={13} height={13} alt='youtube image' /></span>
-
               </a>
             </div>
           </Col>
@@ -85,7 +86,7 @@ const Footer = () => {
         <Row>
           <Col md={6} className="">
             <p className="mb-0">
-              Copyright © 2023 Wisdom Sprouts IT Training Hub. All rights reserved.
+              Copyright © 2025 Wisdom Sprouts IT Training Hub. All rights reserved.
             </p>
           </Col>
           <Col md={6} className="text-md-end">

@@ -18,7 +18,7 @@ const InternJourney = () => {
         <div className="journey-line">
           {steps.map((step, index) => (
             <div key={index} className="journey-step">
-              <div className="circle">{step.number}</div>
+              <div className="circle mb-md-4">{step.number}</div>
               <div className="label">{step.label}</div>
               {/* connector line after each step except last */}
               {index !== steps.length - 1 && <div className="connector"></div>}

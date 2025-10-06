@@ -21,22 +21,22 @@ const ProgramHighLights = () => {
         "Work closely with experienced developers and mentors for personalized guidance and feedback.",
     },
     {
-      title: "Internship Letter & Project Certificate",
+      title: "Internship Letter & Training Certificate",
       description:
         "Receive official credentials backed by Wisdom Sprouts & Scalefull Technologies on completion.",
     },
     {
-      title: "Resume & LinkedIn Optimization",
+      title: "Resume, Naukari & LinkedIn Optimization",
       description:
         "Boost your online presence and stand out to recruiters with personalized improvements.",
     },
     {
-      title: "Real-World Projects",
+      title: "10+ Real-World Projects",
       description:
         "Build apps, scripts, or tools used in real environments — not dummy assignments.",
     },
     {
-      title: "100% Placement Support",
+      title: "100% Placement Assurance",
       description:
         "Access to job calls, mock interviews, soft skills training, and referral support.",
     },

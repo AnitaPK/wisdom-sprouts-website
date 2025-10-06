@@ -2,7 +2,7 @@
 
 .cardSection {
     background-image: url('/Landing page.png');
-    padding: 50px 10px;
+    padding: 70px 10px;
 }
 
 .cardContainer {
@@ -49,9 +49,7 @@
     font-weight: bold;
     display: inline;
     font-family: 'Montserrat', sans-serif;
-
 }
-
 .alternateBadge {
     background-color: #E7F1F1;
     color: #0B7077 !important;
@@ -83,7 +81,7 @@
 }
 
 .cardTools {
-    font-size: 18px;
+    font-size: 0.9rem;
     color: #053236;
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -91,7 +89,7 @@
 }
 
 .alternateCardTools {
-    font-size: 18px;
+    font-size: 0.9rem;
     color: #E7F1F1;
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -99,24 +97,22 @@
 }
 
 .cardDescription {
-    font-size: 12px;
+    font-size: 0.8rem;
     line-height: 1.6;
     flex-grow: 1;
-    color: #939599;
+    color: #6d6d6d;
     font-family: 'Montserrat', sans-serif;
 
 }
 
 .alternateCardDescription {
-    font-size: 1em;
+    font-size: 0.8rem;
     line-height: 1.6;
     flex-grow: 1;
     color: #E7F1F1;
     font-family: 'Montserrat', sans-serif;
 
 }
-
-
 
 /* Media Queries */
 @media (max-width: 768px) {
