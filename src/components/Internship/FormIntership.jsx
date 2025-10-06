@@ -1,12 +1,33 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import "./FormIntership.css";
 
 // add college name
 // passout year
 const FormIntership = () => {
+const [selectedDomain, setSelectedDomain] = useState("");
+  const [durations, setDurations] = useState([]);
+
+  // Mapping domain → allowed durations
+  const domainDurations = {
+    "MERN Stack": ["45 Days", "90 Days / 3 Months", "180 Days / 6 Months"],
+    "Java Fullstack": ["45 Days", "90 Days / 3 Months", "180 Days / 6 Months"],
+    "Python Fullstack": ["45 Days", "90 Days / 3 Months", "180 Days / 6 Months"],
+    "ML / AI": ["45 Days"],
+    "Cloud Computing": ["45 Days"],
+    "Cyber Security": ["45 Days"],
+  };
+
+  const handleDomainChange = (e) => {
+    const domain = e.target.value;
+    setSelectedDomain(domain);
+    setDurations(domainDurations[domain] || []);
+  };
+
+
+
   return (
     <section className="job-form-wrapper">
       <div className="container my-3 custom-container-job-form">
@@ -50,25 +71,34 @@ const FormIntership = () => {
                 />
               </div>
 
-              {/* Domain select (Select) */}
-              <div className="mb-3">
-                <select className="form-select custom-input">
-                  <option>Select Domain</option>
-                  <option>Java Fullstack</option>
-                  <option>MERN Stack</option>
-                  <option>Python Fullstack </option>
-                </select>
-              </div>
+              {/* Domain select */}
+      <div className="mb-3">
+        <select
+          className="form-select custom-input"
+          value={selectedDomain}
+          onChange={handleDomainChange}
+        >
+          <option value="">Select Domain</option>
+          <option value="Java Fullstack">Java Fullstack</option>
+          <option value="MERN Stack">MERN Stack</option>
+          <option value="Python Fullstack">Python Fullstack</option>
+          <option value="ML / AI">ML / AI</option>
+          <option value="Cloud Computing">Cloud Computing</option>
+          <option value="Cyber Security">Cyber Security</option>
+        </select>
+      </div>
 
-              {/* Intership Duration (Select) */}
-              <div className="mb-3">
-                <select className="form-select custom-input">
-                  <option>Intership Duration</option>
-                  <option>45 Days</option>
-                  <option>90 Days / 3 Months</option>
-                  <option>180 Days / 6 Months </option>
-                </select>
-              </div>
+      {/* Internship Duration */}
+      <div className="mb-3">
+        <select className="form-select custom-input" disabled={!durations.length}>
+          <option>
+            {durations.length ? "Select Internship Duration" : "Select Domain First"}
+          </option>
+          {durations.map((duration, index) => (
+            <option key={index}>{duration}</option>
+          ))}
+        </select>
+      </div>
 
               {/* Mode Of Intership (Select) */}
               <div className="mb-3">
