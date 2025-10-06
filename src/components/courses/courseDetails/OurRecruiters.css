@@ -1,0 +1,47 @@
+/* Hiring Section */
+.hiring-section {
+  text-align: center;
+  margin: 50px 0;
+}
+.hiring-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.hiring-subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.partner-item img {
+  max-height: 40px;
+  object-fit: contain;
+}
+
+
+.custom-text-color-green {
+    color: #141414 !important;
+    font-size: 40px;
+    font-weight: 500 !important;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.custom-text-color-green-small {
+   font-size: 16px;
+    color: #0D0C10 !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  
+.custom-text-color-green{
+    font-size: 30px;
+    font-weight: 400;
+}
+}

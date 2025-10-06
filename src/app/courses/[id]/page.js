@@ -1,5 +1,6 @@
 import React from 'react'
 import {coursesList}  from "../../../data/CoursesDetails";
+import {topics} from "../../../data/HtmlCssBootstrap";
 import CourseDetailPage from '@/components/courses/CourseDetailsPage';
 
 
@@ -14,7 +15,7 @@ import CourseDetailPage from '@/components/courses/CourseDetailsPage';
   }
   return (
     <div>
-      <CourseDetailPage course={course} />
+      <CourseDetailPage course={course} topics={topics}/>
     </div>
   )
 }

@@ -1,0 +1,98 @@
+
+.statStrip {
+  /* background: #eaf6f4; */
+  padding: 0; /* Remove padding here, add it inside cardBox */
+  border-radius: 12px; 
+}
+
+.cardBox {
+  background: #ffffff; /* White background for the card area */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  flex-grow: 1; 
+  box-shadow: 0 2px 8px rgba(10, 106, 104, 0.06); /* subtle shadow for card pop */
+  margin: 0.5rem; /* Add margin around each card to show the statStrip background */
+}
+
+.cardValue {
+  font-size: 24px;
+  font-weight: 550;
+  color: #0B7077;
+}
+
+.cardLabel {
+  margin-top: 0.45rem;
+  font-size: 9px;
+  font-weight: 400;
+  color: #0B7077;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Base divider style (dark teal) */
+.divider {
+  border-color: #0B7077;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* ------------------ Mobile View (2x2 Grid) - col-6 ------------------ */
+
+@media (max-width: 767.98px) {
+  /* Vertical dividers: Apply right border to items on the left column (1st and 3rd) */
+  .col-6:nth-child(odd) .cardBox.divider {
+    border-right-width: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  /* Horizontal dividers: Apply bottom border to items on the top row (1st and 2nd) */
+  .col-6:nth-child(-n + 2) .cardBox.divider {
+    border-bottom-width: 2px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  /* Reset corner radii for inner touching boxes */
+  .col-6:nth-child(1) .cardBox.divider { border-bottom-right-radius: 0; }
+  .col-6:nth-child(2) .cardBox.divider { border-bottom-left-radius: 0; }
+  .col-6:nth-child(3) .cardBox.divider { border-top-right-radius: 0; }
+  .col-6:nth-child(4) .cardBox.divider { border-top-left-radius: 0; }
+}
+
+/* ------------------ Laptop/Desktop View (1x4 Row) - col-md-3 ------------------ */
+
+@media (min-width: 768px) {
+  /* Reset all individual borders and radii that were applied for mobile */
+  .cardBox.divider {
+    border-width: 0 !important;
+    border-radius: 12px;
+  }
+  
+  /* Apply ONLY the right border to all but the last item in the 1x4 row */
+  .col-md-3:not(:last-child) .cardBox.divider {
+    border-right-width: 2px;
+    /* Reset radius on the right side where the border is */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  /* Reset radius on the left side of items that follow a bordered item */
+  .col-md-3:nth-child(n+2) .cardBox.divider {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /* Ensure the first and last items retain their outer corner radius */
+  .col-md-3:first-child .cardBox.divider {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  .col-md-3:last-child .cardBox.divider {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}

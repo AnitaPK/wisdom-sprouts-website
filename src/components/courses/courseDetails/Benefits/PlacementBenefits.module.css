@@ -1,0 +1,68 @@
+.sectionTitle {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #085459;
+  font-family: 'Montserrat', sans-serif !important;
+  
+}
+
+.cardBox {
+  border: none;
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.numImg {
+  width: 30px;
+  height: 30px;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.cardText {
+  font-size: 1.1rem;
+  color: #666;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.learningBox {
+  background: #0B7077;
+  color: white;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+  /* width: 250px; */
+  /* height: 200px; */
+  padding-top: 25px;
+  padding-bottom : 25px ;
+
+}
+
+.learningBox:hover {
+  transform: translateY(-5px);
+}
+
+.learningText {
+  margin-top: 8px;
+  font-size: 1.5rem;
+  /* font-weight: 500; */
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+.customIcon{
+    background-color: white;
+    padding: 0.7rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+.iconImg {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}

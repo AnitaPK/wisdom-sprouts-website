@@ -1,0 +1,81 @@
+.curriculamSection{
+  background-image: url('/Landing page.png');
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.left-card {
+  background: #0B7077;
+  border-radius: 16px;
+  color: white;
+}
+.custom-left-heading{
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700;
+}
+
+.info-box{
+  background-color: white;
+  padding: 1.1rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.info-box h6{
+  color: #000;
+  font-size: 18px;
+  }
+.info-box p{
+
+  color: #3C3C43;
+  font-size: 14px;
+}
+.brochure-btn {
+  background-color: #ff5722;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+  font-family: 'Montserrat', sans-serif !important;
+  display: block;
+  margin: 5px auto;
+}
+
+.brochure-btn:hover {
+  background-color: #e64a19;
+}
+
+/* Accordion custom styling */
+.custom-accordion {
+  border: none;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.accordion-button {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  background-color: #fff;
+  border-radius: 14px !important;
+}
+
+.accordion-body ul {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  color: #6F6C90;
+  font-family: 'Montserrat', sans-serif !important;
+  
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff5722' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  transform: scale(1.3);
+}
