@@ -1,0 +1,61 @@
+/* Shared IT section styles (cards, buttons, spacing) */
+
+.it-section-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #0b6b6b;
+}
+
+.it-card {
+  background-color: #0B7077;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.it-card-title {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.it-card-text {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.it-cta-btn {
+  background-color: #FD661F;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: #ffffff;
+  font-weight: 550;
+  transition: 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Alternate CTA: white background with orange text */
+.it-cta-btn--white {
+  background-color: #ffffff;
+  color: #FD661F;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .it-card-text {
+    line-height: 0.9;
+  }
+
+  .it-card-title {
+    font-size: 32px;
+  }
+}
+
+

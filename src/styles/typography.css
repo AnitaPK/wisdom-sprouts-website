@@ -1,0 +1,60 @@
+/* Global typography utilities for headings and text colors */
+
+:root {
+  --heading-xxl: 36px;
+  --heading-xl: 30px;
+  --heading-lg: 24px;
+  --heading-md: 20px;
+  --text-sm: 14px;
+}
+
+.heading-primary {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #252641;
+}
+
+.heading-accent {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #0b6b6b;
+}
+
+.text-muted-sm {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #0b6b6b;
+}
+
+.text-contrast {
+  color: #ffffff;
+}
+
+/* Reusable section heading + description */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #085459;
+}
+
+.section-title--accent {
+  color: #FD661F;
+}
+
+.section-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #085459;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+

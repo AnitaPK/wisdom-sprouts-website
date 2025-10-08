@@ -1,0 +1,16 @@
+/* Global utilities for repeated small patterns */
+
+/* Outline badge used across sections */
+.badge-outline {
+  background-color: transparent;
+  color: #555;
+  border: 1px solid #fff;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Section container background used in multiple sections */
+.section-bg-pattern {
+  background-image: url('/Landing page.png');
+}
+
+
