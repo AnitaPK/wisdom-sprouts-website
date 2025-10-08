@@ -1,10 +1,12 @@
 import BenefitsBeyondLearning from './courseDetails/Benefits/BenefitsBeyondLearning';
 import PlacementBenefits from './courseDetails/Benefits/PlacementBenefits';
 import AccordionCourses from './courseDetails/CurriculumSection';
+import FAQ from './courseDetails/FAQ';
 import HeaderSection from './courseDetails/header/HeaderSection'
 import OurRecruiters from './courseDetails/OurRecruiters';
 import SyllabusSection from './courseDetails/SyllabusSection';
 import Testimonials from './courseDetails/Testimonials';
+import CertificateSection from './courseDetails/CertificateSection';
 
 export default function CourseDetailPage({ course, topics }) {
 
@@ -21,12 +23,15 @@ export default function CourseDetailPage({ course, topics }) {
     <PlacementBenefits />
     <BenefitsBeyondLearning />
     <Testimonials />
-      <div className="p-8 max-w-3xl mx-auto">
+    <FAQ />
+    <CertificateSection />
+
+      {/* <div className="p-8 max-w-3xl mx-auto">
       <img src={course.img} alt={course.title} className="w-full h-60 object-cover rounded-lg" />
       <h1 className="text-2xl font-bold mt-4">{course.title}</h1>
       <p className="text-gray-700 mt-2">{course.description}</p>
       <p className="mt-4 font-medium">{course.students}+ students enrolled</p>
-    </div>
+    </div> */}
     </>
     
   );

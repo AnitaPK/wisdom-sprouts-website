@@ -1,37 +1,3 @@
-.connectSection {
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif !important;
-  padding: 40px;
-  /* text-align: center; */
-}
-
-.connectTitle {
-  font-size: 40px;
-  color: #085459;
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 400;
-}
-
-.connectHighlight {
-  color: #FD661F;
-}
-
-.connectText {
-  font-size: 16px;
-  color: #1E1E1E;
-  margin-top: 15px;
-  font-family: 'Montserrat', sans-serif !important;
-}
-.cutomButtonOrange{
-      background-color: #FD661F !important;
-  color: white !important;
-  border: none;
-    border-radius: 30px;
-    padding: 0.6rem 1.4rem;
-  font-family: 'Montserrat', sans-serif !important;
-
-}
-
 /* Contact Cards */
 .contact-section {
   padding: 20px;
@@ -92,8 +58,6 @@
   transform: scale(1.1);
 }
 
-
-
 /* Contact form css  */
 .custom-heading-black{
   color: black;
@@ -126,20 +90,6 @@
 
 /* RESPONSIVE */
 @media (max-width: 767px) {
-  .connect-section {
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-  }
-
-  .connect-title {
-    font-size: 32px;
-    text-align: center;
-    font-weight: 100px;
-
-    /* display: block; */
-  }
-
   .contact-card {
     max-width: 100%;
     margin: auto;
@@ -149,22 +99,4 @@
     padding: 20px;
     margin: auto;
   }
-  .connectTitle {
-    font-size: 32px;
-  }
-
-  .connectText {
-    font-size: 16px;
-  }
-
-  .connectSection {
-    padding: 20px;
-  }
-  .cutomButtonOrange{
-    display: block;
-    margin: 2px auto;
-  }
-.custom-heading-green{
-  font-size: 32px;
-}
 }

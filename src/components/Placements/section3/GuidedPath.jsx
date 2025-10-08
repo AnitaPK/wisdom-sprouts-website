@@ -2,6 +2,7 @@
 
 import React from "react";
 import './GuidedPath.css'
+import '@/styles/typography.css'
 import Image from 'next/image'
 
 const GuidedPath = () => {
@@ -18,20 +19,20 @@ const GuidedPath = () => {
     <section>
     <div className="guided-section">
       
-<div className="container text-center ">
-        <h2 className="fw-bold custom-text-color-green">
+      <div className="container text-center ">
+        <h2 className="fw-bold section-title">
           Your Guided Path—Every Step Designed For Success.
         </h2>
-        <p className="mt-3 custom-text-color-green-small w-75 mx-auto">
+        <p className="mt-3 section-desc w-75 mx-auto">
          With consistently high placement rates, strong industry tie-ups, and
         students hired by top companies, our placement results are more than
         metrics—they’re milestones of transformation.</p>
       </div>
 
-      <div className="container px-5 mt-3">
-      <div className="row g-4 justify-content-center px-5">
+      <div className="container px-4 px-md-5 mt-3">
+      <div className="row g-4 justify-content-center px-2 px-md-5">
         {steps.map((s, index) => (
-          <div key={index} className="col-4 col-md-3">
+          <div key={index} className="col-12 col-sm-4 col-md-3">
             <div className="step-circle">
                 <Image
                               src={s.step}

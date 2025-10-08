@@ -1,0 +1,60 @@
+.certificate-card {
+  background-color: #0B7077;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.certificate-illustration {
+  width: 500px;
+  height:310px;
+}
+.certificate-card-title{
+  font-size: 3rem;
+  font-family: var(--font-primary) !important;
+
+}
+.certificate-card-text{
+  font-size: 1.2rem;
+  font-family: var(--font-primary) !important;
+
+}
+.certificate-divider {
+  border: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+}
+.certificate-orange-button{
+  background-color: #FD661F !important;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    border-radius: 14px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .certificate-illustration {
+    max-width: 320px;
+  }
+  .certificate-illustration {
+    width: 287px;
+    height:178px;
+  }
+  .certificate-card-title{
+    font-size: 2rem;
+  }
+  .certificate-card-text{
+    font-size: 1.1rem;
+  }
+}
+
+

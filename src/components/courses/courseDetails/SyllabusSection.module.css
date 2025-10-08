@@ -4,9 +4,9 @@
 }
 
 .heading {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: #074347; /* Dark teal */
+  color: #085459; /* Dark teal */
   line-height: 1.3;
   font-family: 'Montserrat', sans-serif !important;
 
@@ -15,7 +15,7 @@
 .subText {
   font-size: 1rem;
   color: #074347;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -37,7 +37,6 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
 
-
   .heading {
     font-size: 2rem;
     text-align: center;
@@ -45,10 +44,11 @@
   .subText {
     font-size: 1rem;
     text-align: center;
+    width: 100%;
   }
   .title {
-    font-size: 1.1rem;
-    padding-left: 15px
+    font-size: 1.5rem;
+    padding-left: 15px;
   }
   .desc {
     font-size: 0.85rem;

@@ -12,26 +12,16 @@
     margin-top: 20px;
 
 }
-.custom-text-color-green {
-    color: #141414 !important;
-    font-size: 40px;
-    font-weight: 500 !important;
-  font-family: 'Montserrat', sans-serif !important;
-}
-
-.custom-text-color-green-small {
-   font-size: 16px;
-    color: #0D0C10 !important;
-  font-family: 'Montserrat', sans-serif !important;
+.step-circle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 /* Media Queries */
 @media (max-width: 768px) {
-  
-.custom-text-color-green{
-    font-size: 30px;
-    font-weight: 400;
-}
-
+  .step-text{
+    font-size: 16px;
+  }
 }

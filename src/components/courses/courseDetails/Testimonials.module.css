@@ -1,67 +1,75 @@
+.testmonialContainer{
+  background-color: #E7F1F1;
+}
 .title {
   font-size: 28px;
-  font-weight: 700;
-  color: #043d36;
-  letter-spacing: -0.2px;
+  font-weight: 600;
+  color: #085459;
+  font-family: 'Montserrat', sans-serif !important;
 }
-
 /* card base */
 .cardBox {
-  background: #006d65;
+  background: #0B7077;
   border-radius: 16px;
   color: #fff;
   min-height: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18); /* stronger default shadow */
   position: relative;
 }
 
 /* raised style (center card): bigger shadow, higher stacking */
 .raised {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.28); /* center card pronounced shadow */
   z-index: 5;
 }
 
 /* quote mark */
 .quote {
-  font-size: 48px;
-  color: #ff6b2c;
   position: absolute;
-  top: -12px;
-  left: 14px;
-  line-height: 1;
+  top: -30px;
+  left: 24px;
 }
-
+.quote img{
+  width: 80px;
+  height: 63px;
+}
 /* name and avatar */
 .name {
   font-size: 18px;
-  font-weight: 600;
-  margin-top: 28px;
-  margin-bottom: 8px;
+  font-weight: 500;
+  /* margin-top: 16px; */
+  /* margin-bottom: 3.1rem !important;  */
+  font-family: 'Montserrat', sans-serif !important;
 }
 
-.avatar {
-  display: block;
-  margin: 8px auto;
-  border: 3px solid #fff;
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-}
 
 /* the white inner text box */
 .textBox {
   background: #ffffff;
   border-radius: 12px;
-  padding: 14px;
-  margin: 12px 0 0;
+  padding: 0.7rem;
+  /* margin: 1rem; */
+  position: relative
 }
 
+.avatar {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  position: absolute;
+  top: -45px; /* overlap top edge of white box */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 4px 2px rgb(209, 241, 249);
+}
 .text {
-  font-size: 14px;
-  color: #333333;
-  margin: 0;
-  line-height: 1.4;
+  font-size: 16px;
+  color: #050505;
+  margin: 1rem ; 
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* dots as buttons (for accessibility) */
@@ -90,10 +98,28 @@
     font-size: 22px;
   }
   .cardBox {
-    min-height: 260px;
+    min-height: 340px; /* taller card like mock */
   }
   .quote {
-    font-size: 44px;
     left: 12px;
+    top: -18px;
+  }
+  .name {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 2.2rem;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+    top: -40px; /* sits over the white box */
+  }
+  .textBox {
+    padding: 16px;
+    margin: 12px 12px 10px;
+  }
+  .text {
+    font-size: 14px;
+    margin: 12px;
   }
 }

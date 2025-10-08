@@ -13,7 +13,7 @@ export default function StatsCards({ items }) {
   const data = Array.isArray(items) && items.length ? items : defaultItems
 
   return (
-    <section className={`container my-4`}>
+    <section className={`container-fluid my-4 ms-0`}>
       {/* Apply statStrip to the row container for the overall light teal background */}
       <div className={`row g-0 justify-content-center align-items-stretch ${styles.statStrip}`}>
         {data.map((item, idx) => (

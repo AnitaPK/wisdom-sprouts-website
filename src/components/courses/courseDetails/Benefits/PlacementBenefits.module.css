@@ -1,47 +1,51 @@
 .sectionTitle {
-  font-size: 2.1rem;
+  font-size: 30px !important; /* mobile default */
   font-weight: 600;
   color: #085459;
   font-family: 'Montserrat', sans-serif !important;
-  
 }
 
 .cardBox {
-  border: none;
-  padding: 1rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #ffffff;
   border-radius: 0;
+  min-height: 180px; /* mobile card height like mock */
+  padding: 12px;
 }
 
-.numImg {
-  width: 30px;
-  height: 30px;
+/* Reduce inner spacing on small screens */
+@media (max-width: 575.98px) {
+  .sectionTitle {
+    font-size: 26px; }
+  .cardBox { 
+    /* padding: 12px; */
+     /* min-height: 180px; */
+  padding: 0;
+     }
+
 }
+
+.numImg { width: 28px; height: 28px; }
 
 .cardTitle {
-  font-size: 1.3rem;
+  font-size: 16px;
   font-weight: 600;
-  color: #000;
+  color: var(--color-text, #111);
   font-family: 'Montserrat', sans-serif !important;
-
 }
 
 .cardText {
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 12px;
+  color: var(--color-text-muted, #666);
   font-family: 'Montserrat', sans-serif !important;
-
 }
 
 .learningBox {
   background: #0B7077;
   color: white;
-  border-radius: 12px;
   transition: transform 0.2s ease-in-out;
-  /* width: 250px; */
-  /* height: 200px; */
-  padding-top: 25px;
-  padding-bottom : 25px ;
-
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .learningBox:hover {
@@ -50,19 +54,32 @@
 
 .learningText {
   margin-top: 8px;
-  font-size: 1.5rem;
-  /* font-weight: 500; */
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif !important;
-
 }
 .customIcon{
-    background-color: white;
+    background-color: #fff;
     padding: 0.7rem;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 8px;
 }
-.iconImg {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
+.iconImg { width: 26px; height: 26px; object-fit: contain; }
+
+/* Grid gap tuning and responsive helpers */
+.cardsGrid { row-gap: 16px; }
+
+/* Explicit breakpoint tweaks when needed */
+@media (min-width: 992px) {
+  .sectionTitle {
+    font-size: 36px; }
+  /* laptop/desktop */
+  .sectionTitle { font-size: 23px; }
+  .cardBox { padding: 16px; min-height: 220px; }
+}
+
+/* Ensure inner Bootstrap card body stretches within the square */
+.cardBox :global(.card-body) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

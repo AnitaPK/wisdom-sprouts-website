@@ -75,7 +75,7 @@ const JobForm = () => {
           </div>
 
           {/* Right Image Section */}
-          <div className="col-md-6 text-center">
+          <div className="col-md-6 text-center mt-3 mt-md-0">
             <Image
               src="/placements/JobForm.png"
               alt="Student"

@@ -1,5 +1,6 @@
 import React from 'react'
 import './whyChooseWS.css'
+import '@/styles/typography.css'
 import HighlightsGrid from './HighlightsGrid'
 import Image from 'next/image'
 
@@ -8,8 +9,8 @@ const WhyChooseWS = () => {
   return (
     <section>
         <div className="container text-center mt-3">
-      <h2 className="heading-why-choose w-75 mx-auto">Why Thousands Choose Wisdom Sprouts for Tech Careers</h2>
-      <p className='paragrapg-why-choose'>We’re not just a training institute — we’re your career-building partner.</p>
+      <h2 className="section-title w-75 mx-auto">Why Thousands Choose Wisdom Sprouts for Tech Careers</h2>
+      <p className='section-desc'>We’re not just a training institute — we’re your career-building partner.</p>
     </div>
       <HighlightsGrid />
 

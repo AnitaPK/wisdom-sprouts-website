@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./HeaderSection.css";
 import ReactCountryFlag from "react-country-flag";
 import StatsCards from "./StatsCardHeader";
+import "@/styles/typography.css";
 
 
 const HeaderSection = () => {
@@ -13,21 +14,21 @@ const HeaderSection = () => {
       <div className="container">
         <div className="row ">
           {/* Left Side: Text + Button */}
-          <div className="col-md-6">
+          <div className="col-12 col-md-6">
             <div className="container connectSection">
-              <h1 className="connectTitle">
+              <h1 className="section-title">
                 {" "}
-                <span className="connectHighlight">
+                <span className="section-title--accent">
                   MERN Full Stack Web Development {" "}
                 </span>
                 Job Bootcamp with GenAI
               </h1>
-              <p className="connectText">
+              <p className="section-desc">
                 Choose MERN stack or Spring Boot and acquire expertise through
                 practical application and real-world projects.
               </p>
               <div>
-                <div className="container ms-0">
+                <div className="container-fluid ms-0">
                   <span className="badge rounded-pill custom-green-badge me-2">
                     Placement assistance
                   </span>
@@ -43,15 +44,14 @@ const HeaderSection = () => {
                 </div>
                 <StatsCards />
                 <div>
-            <button className="btn brochure-btn">Download Brochure</button>
+            <button className="custom-orange-button d-block mx-auto d-md-inline-block">Download Brochure</button>
 </div>
               </div>
             </div>
           </div>
 
           {/* Right Side: Image */}
-          <div className="col-md-6 mt-3 mt-md-0">
-            {/* <div className="col-12 col-lg-6 ps-5 "> */}
+            <div className="col-12 col-md-6 ps-md-5 ">
                       <div className="free-card ms-5">
                         <h3 className="free-card-title">
                           Book a free live webinar to know more

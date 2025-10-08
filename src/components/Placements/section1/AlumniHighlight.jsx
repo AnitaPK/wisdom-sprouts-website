@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./Section1.css";
+import "@/styles/typography.css";
 
 const AlumniHighlight = () => {
   return (
@@ -9,13 +10,13 @@ const AlumniHighlight = () => {
         {/* Left Content */}
         <div className="col-md-6">
           <div className="container connectSection">
-            <h1 className="connectTitle">
-              <span className="connectHighlight">
+            <h1 className="section-title">
+              <span className="section-title--accent">
                 Real Journeys Of Students {" "}
               </span>
               Who Transformed Their Careers with Wisdom Sprouts
             </h1>
-            <p className="connectText">
+            <p className="section-desc">
               Every success story you see here began with a single decision—to
           trust the process, believe in growth, and choose Wisdom Sprouts
             </p>

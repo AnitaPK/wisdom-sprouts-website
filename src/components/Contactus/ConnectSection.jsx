@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
 import Image from "next/image"
+import "@/styles/typography.css";
 
 const ConnectSection = () => {
   return (
@@ -10,12 +11,12 @@ const ConnectSection = () => {
         <div className="row align-items-center">
           {/* Left Side: Text + Button */}
           <div className="col-md-7">
-               <div className={`container connectSection}`}>
+               <div className={"container connectSection"}>
 
 
-      <h1 className="connectTitle"> <span className="connectHighlight"> Let’s Connect </span>
+      <h1 className="section-title"> <span className="section-title--accent"> Let’s Connect </span>
       And Build Something Great Together</h1>
-      <p className="connectText">
+      <p className="section-desc">
         Whether you’re a student, recruiter, or academic partner — we’re here 
               to help you take the next step.
       </p>

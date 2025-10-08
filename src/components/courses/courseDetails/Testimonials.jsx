@@ -17,15 +17,6 @@ export default function Testimonials() {
   const [index, setIndex] = useState(1);      // active testimonial index (0..total-1)
   const [direction, setDirection] = useState(1); // 1 => forward (right->left slide), -1 => backward
 
-  // autoplay every 3s
-  useEffect(() => {
-    const t = setInterval(() => {
-      setDirection(1);
-      setIndex((prev) => (prev + 1) % total);
-    }, 5000);
-    return () => clearInterval(t);
-  }, [total]);
-
   const handleDotClick = (newIdx) => {
     if (newIdx === index) return;
     setDirection(newIdx > index ? 1 : -1);
@@ -48,8 +39,9 @@ export default function Testimonials() {
   const mobileExit = (dir) => ({ opacity: 0, x: dir > 0 ? -150 : 150 });
 
   return (
+    <section class={`container-fluid ${styles.testmonialContainer } py-5`}>
     <div className="container text-center my-5">
-      <h2 className={`${styles.title} mb-4`}>What Our Learners Say About Us</h2>
+      <h2 className={`${styles.title} mb-5`}>What Our Learners Say About Us</h2>
 
       {/* ---------- Desktop: 3 fixed slots ---------- */}
       <div className="row d-none d-md-flex justify-content-center align-items-start">
@@ -68,9 +60,13 @@ export default function Testimonials() {
                   transition={{ duration: 0.55, ease: "easeInOut" }}
                   className="w-100"
                 >
-                  <div className={`${styles.cardBox} p-4 mb-4 ${slotPos === 1 ? styles.raised : ""}`}>
-                    <span className={styles.quote}>&#8220;</span>
-                    <h5 className={styles.name}>{t.name}</h5>
+                  <div className={`${styles.cardBox} p-3 mb-1 ${slotPos === 1 ? styles.raised : ""}`}>
+                    <span className={styles.quote}>
+                      <img src="/courses/quote.png" alt="quote" />
+                    </span>
+                    <h5 className={`${styles.name} py-4 mb-5`}>{t.name}</h5>
+                    <div className={`${styles.textBox} m-3 px-1 pt-5`}>
+
                     <Image
                       src={t.img}
                       alt={t.name}
@@ -78,7 +74,6 @@ export default function Testimonials() {
                       height={72}
                       className={`${styles.avatar} rounded-circle`}
                     />
-                    <div className={styles.textBox}>
                       <p className={styles.text}>{t.text}</p>
                     </div>
                   </div>
@@ -101,16 +96,18 @@ export default function Testimonials() {
             transition={{ duration: 0.55, ease: "easeInOut" }}
           >
             <div className={`${styles.cardBox} p-4 mb-4 ${styles.raised}`}>
-              <span className={styles.quote}>&#8220;</span>
-              <h5 className={styles.name}>{testimonials[index].name}</h5>
-              <Image
-                src={testimonials[index].img}
-                alt={testimonials[index].name}
-                width={72}
-                height={72}
-                className={`${styles.avatar} rounded-circle`}
-              />
+            <span className={styles.quote}>
+                      <img src="/courses/quote.png" alt="quote" />
+                    </span>
+              <h5 className={`${styles.name} py-4`}>{testimonials[index].name}</h5>
               <div className={styles.textBox}>
+                <Image
+                  src={testimonials[index].img}
+                  alt={testimonials[index].name}
+                  width={72}
+                  height={72}
+                  className={`${styles.avatar} rounded-circle`}
+                />
                 <p className={styles.text}>{testimonials[index].text}</p>
               </div>
             </div>
@@ -130,5 +127,6 @@ export default function Testimonials() {
         ))}
       </div>
     </div>
+    </section>
   );
 }

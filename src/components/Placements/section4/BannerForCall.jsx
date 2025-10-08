@@ -1,20 +1,20 @@
 import React from 'react';
-import '@/styles/banner.css';
+import '@/styles/it.css';
 import Image from 'next/image';
 
 const BannerForCall = () => {
   return (
     <section className="container mt-5">
-       <div className="container">
-        <div className={`card shadow-lg border-0 itCareerCard`}>
+      <div className="container">
+        <div className={`card shadow-lg border-0 it-card`}>
           <div className="card-body p-4 p-md-5 d-flex flex-column flex-md-row align-items-center justify-content-between">
             <div className="text-white mb-4 mb-md-0 me-md-4 text-center text-md-start">
-              <h3 className="card-title fw-bold ">
+              <h3 className="it-card-title fw-bold ">
                 Ready to start your placement journey?</h3>
-              <button className="custom-orng-btn">
+              <button className="it-cta-btn">
                 Enroll Now
               </button>
-            <button className="custom-white-btn">
+            <button className="it-cta-btn--white">
                 Contact Us
               </button>
             </div>

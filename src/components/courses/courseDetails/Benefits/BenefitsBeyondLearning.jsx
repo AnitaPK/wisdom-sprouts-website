@@ -13,7 +13,9 @@ const BenefitsBeyondLearning = () => {
   ];
 
   return (
-    <div className="container my-5 w-75">
+    <section className="container-fluid">
+
+    <div className="container my-5">
       <h3 className={`text-center mb-4 ${styles.sectionTitle}`}>
         Benefits beyond learning
       </h3>
@@ -36,6 +38,7 @@ const BenefitsBeyondLearning = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@
 .job-form-wrapper {
     /* background-color: #B3D3D5; */
     background-image: url('/Landing page.png');
-    padding: 80px;
+    padding: 50px 20px;
 }
 
 .custom-container-job-form {
@@ -13,13 +13,16 @@
 .custom-heading-job-form {
     color: #0b6b6b;
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
 }
 
 .custom-para-job-form {
     color: #0b6b6b;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif !important;
+    /* width: 90%; */
+    padding: 5px 10px;
 }
 
 
@@ -32,7 +35,7 @@
   font-size: 14px;
   color: #0b6b6b;
   box-shadow: none;
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -53,12 +56,26 @@
   border: none;
   border-radius: 25px;
   padding: 12px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   transition: 0.3s ease;
 }
 
 .btn-submit:hover {
   background-color: #ff5608;
-  color: white;
+  color: #ffffff;
+}
+
+/* Responsive: align with internship form */
+@media (max-width: 768px) {
+
+.job-form-wrapper {
+  padding: 50px 0px;
+}
+.custom-container-job-form {
+  width: 100%
+}
+.custom-heading-job-form {
+    font-size: 20px;
+}
 }

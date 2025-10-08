@@ -66,7 +66,7 @@ lacus. Nullam congue blandit quam, sit amet scelerisque turpis.
               I agree with <a href="#" className="custom-link">Terms of Use</a> and <a href="#" className="custom-link">Privacy Policy</a>
             </label>
           </div>
-          <button type="submit" className="btn btn-connect">
+          <button type="submit" className="cutomButtonOrange ">
             Send your Message
           </button>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import './OurRecruiters.css'
+import '@/styles/typography.css'
 
 const OurRecruiters = () => {
     const recruiters = [
@@ -13,12 +14,12 @@ const OurRecruiters = () => {
     ];
   return (
     <section className="container text-center pb-5">
-      <div className="container w-50">
-        <h2 className="fw-bold custom-text-color-green">
-          Our Hiring Partners
+      <div className="container ">
+        <h2 className=" section-title">
+        Our Recruiters
         </h2>
-        <p className="mt-3 custom-text-color-green-small">
-          We have been working with some Fortune 500+ recruiters
+        <p className="mb-4 section-desc">
+        We have been working with some Fortune 500+ recruiters
         </p>
       </div>
        <div className="partners-grid">

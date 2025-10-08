@@ -16,13 +16,13 @@ export default function CurriculumSection({ categories }) {
     <div className="container py-5">
       <div className="row g-4">
         {/* Left Section */}
-        <div className="col-lg-3">
+        <div className="col-lg-4">
           <div className="left-card py-2 h-100 pt-3">
             <h5 className="my-5 mx-2 custom-left-heading px-3">Industry Oriented Curriculum</h5>
 
             <div className="info-box mb-3 d-flex align-items-center">
               <div className=" me-3">
-                <Image src="/courses/curriculam/project.png" alt="" width={40} height={43} ></Image>
+                <Image src="/courses/curriculam/project.png" alt="" width={48} height={48} ></Image>
               </div>
               <div>
                 <h6 className="mb-0 ">30+</h6>
@@ -32,7 +32,7 @@ export default function CurriculumSection({ categories }) {
 
             <div className="info-box mb-3 d-flex align-items-center">
               <div className=" me-3">
-                <Image src="/courses/curriculam/language.png" alt="" width={40} height={43} ></Image>
+                <Image src="/courses/curriculam/language.png" alt="" width={48} height={48} ></Image>
                 
                 </div>
               <div>
@@ -43,7 +43,7 @@ export default function CurriculumSection({ categories }) {
 
             <div className="info-box mb-4 d-flex align-items-center">
               <div className="icon me-3">
-                <Image src="/courses/curriculam/duration.png" alt="" width={40} height={43} ></Image>
+                <Image src="/courses/curriculam/duration.png" alt="" width={48} height={48} ></Image>
                 
                 </div>
               <div>
@@ -52,29 +52,33 @@ export default function CurriculumSection({ categories }) {
               </div>
             </div>
 
-            <button className="btn brochure-btn">Download Brochure</button>
+            <button className="btn brochure-btn " type="button">Download Brochure</button>
           </div>
         </div>
 
         {/* Right Section - Accordion */}
-        <div className="col-lg-9">
+        <div className="col-lg-8">
           <div className="accordion" id="courseAccordion">
             {categories.map((cat) => (
               <div key={cat.id} className="accordion-item custom-accordion">
                 <h2 className="accordion-header">
                   <button
-                    className={`accordion-button ${active === cat.id ? "" : "collapsed"}`}
+                    className={`accordion-button d-flex align-items-center justify-content-between ${active === cat.id ? "" : "collapsed"}`}
                     type="button"
+                    aria-expanded={active === cat.id}
+                    aria-controls={`collapse-${cat.id}`}
                     onClick={() => toggle(cat.id)}
                   >
-                    {cat.title}
+                    <span className="acc-title">{cat.title}</span>
+                    <span className={`acc-caret ${active === cat.id ? "rotate" : ""}`}/>
                   </button>
                 </h2>
                 <div
+                  id={`collapse-${cat.id}`}
                   className={`accordion-collapse collapse ${active === cat.id ? "show" : ""}`}
                 >
                   <div className="accordion-body">
-                    <ul>
+                    <ul className="topic-list">
                       {cat.topics.map((topic, i) => (
                         <li key={i}>{topic}</li>
                       ))}

@@ -14,15 +14,16 @@ const PlacementBenefits = () => {
   ];
 
   return (
-    <div className="container m-5">
+    <section className="container-fluid">
+    <div className="container my-5">
       <h3 className={`text-center mb-4 ${styles.sectionTitle}`}>Placement benefits</h3>
-      <div className="row g-4">
+      <div className="row g-2 g-md-4">
         {benefits.map((b) => (
-          <div key={b.id} className="col-6 col-md-6 col-lg-4">
+          <div key={b.id} className="col-6 col-lg-4 mb-1 mb-md-0">
             <div className={`card h-100 ${styles.cardBox}`}>
               <div className="card-body d-flex flex-column">
                 <Image src={b.img} alt={`step-${b.id}`} width={28} height={28} className={styles.numImg} />
-                <h5 className={`card-title mt-2 ${styles.cardTitle}`}>{b.title}</h5>
+                <h5 className={`card-title my-2 ${styles.cardTitle}`}>{b.title}</h5>
                 <p className={`card-text ${styles.cardText}`}>{b.desc}</p>
               </div>
             </div>
@@ -30,6 +31,7 @@ const PlacementBenefits = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

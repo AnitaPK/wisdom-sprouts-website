@@ -1,6 +1,6 @@
 .popular-heading {
   color: #085459 !important;
-  font-size: 56px !important;
+  font-size: 36px !important;
   font-weight: 500 !important;
 font-family: 'Montserrat', sans-serif !important;
 }
@@ -14,7 +14,8 @@ font-family: 'Montserrat', sans-serif !important;
   display: flex;
   max-width: 416px;
   flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 2rem;
+  text-decoration: none;
 }
 
 /* Image wrapper fixed height */
@@ -31,7 +32,12 @@ font-family: 'Montserrat', sans-serif !important;
   flex-direction: column;
   justify-content: space-between;
 }
+.custom-text-days-card{
+  color: #777795;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
 
+}
 /* Keep enroll button at bottom */
 .course-body .btn-enroll {
   align-self: flex-start;
@@ -73,13 +79,14 @@ font-family: 'Montserrat', sans-serif !important;
 
 /* Card Body */
 .course-body h5 {
-  color: #024c40;
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 16px;
+  color: #0B7077;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 650;
 
 }
 .courseDescription{
-    color:#4D4D4D;
+  color:#4D4D4D;
     font-size: 10px;
   font-family: 'Montserrat', sans-serif !important;
 

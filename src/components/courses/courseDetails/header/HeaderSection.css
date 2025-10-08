@@ -38,7 +38,7 @@
   padding: 2rem;
   border-radius: 15px;
   color: white;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .free-card-title {
@@ -97,7 +97,7 @@ select.free-input option {
 }
 
 .free-btn {
-  background-color: #ff6b35;
+  background-color: #FD661F;
   color: white;
   border-radius: 30px;
   font-size: 1rem;
