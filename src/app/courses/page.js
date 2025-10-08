@@ -1,12 +1,12 @@
 import CoursesPage from '@/components/courses/CoursesPage'
 import React from 'react'
-import {coursesList} from '../../data/CoursesDetails'
+import categories from '../../data/CourseCategories'
 
 
 const page = () => {
   return (
     <>
-      <CoursesPage AllCourses={coursesList} />
+      <CoursesPage AllCourses={categories} />
     </>
   )
 }

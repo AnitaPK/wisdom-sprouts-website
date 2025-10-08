@@ -6,10 +6,10 @@ import styles from "./Testimonials.module.css";
 
 const testimonials = [
   { id: 1, name: "Mrunmayi Shinde", img: "/courses/testimonial-mrunmai.png", text: "This course exceeded my expectations—clear, practical, and very engaging! Perfect for beginners—step-by-step guidance and real-world relevance." },
-  { id: 2, name: "Pawan Patil",    img: "/testimonials/pawan.jpg",    text: "The instructors made complex topics so easy to understand. One of the best learning experiences I’ve had online." },
-  { id: 3, name: "Ankit Sharma",   img: "/testimonials/ankit.jpg",    text: "Hands-on examples helped me apply what I learned right away, I actually landed a freelance job after completing this course!" },
-  { id: 4, name: "Sneha Kapoor",   img: "/testimonials/sneha.jpg",    text: "Loved the real-world projects, I could directly apply concepts to my job!" },
-  { id: 5, name: "Rohit Mehra",    img: "/testimonials/rohit.jpg",    text: "Great structure, engaging instructors, and practical learning experience." },
+  { id: 2, name: "Pawan Patil",    img: "/courses/testimonial-mrunmai.png",    text: "The instructors made complex topics so easy to understand. One of the best learning experiences I’ve had online." },
+  { id: 3, name: "Ankit Sharma",   img: "/courses/testimonial-mrunmai.png",    text: "Hands-on examples helped me apply what I learned right away, I actually landed a freelance job after completing this course!" },
+  { id: 4, name: "Sneha Kapoor",   img: "/courses/testimonial-mrunmai.png",    text: "Loved the real-world projects, I could directly apply concepts to my job!" },
+  { id: 5, name: "Rohit Mehra",    img: "/courses/testimonial-mrunmai.png",    text: "Great structure, engaging instructors, and practical learning experience." },
 ];
 
 export default function Testimonials() {
