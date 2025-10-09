@@ -252,7 +252,12 @@
     font-size: 1.5rem;
   }
   .mainTitle{
-    font-size: 24px;
+    font-size: 38px;
+    text-align: center;
+    
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
   }
 .carouselNavBtn {
   top: 25%;

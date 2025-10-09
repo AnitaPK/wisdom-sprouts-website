@@ -1,0 +1,30 @@
+.recruitHeading{
+  font-size: 36px;
+  color:#074347;
+  font-weight:600;
+}
+.recruitSubtext{
+  max-width:680px;
+  margin:0 auto;
+  color:#074347;
+  font-family:'Montserrat', sans-serif !important;
+  font-size:14px;
+}
+
+.recruit-item{ position:relative; }
+.recruit-overlay{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  background:rgba(0,0,0,0.35); color:#fff; opacity:0; transition:opacity .3s ease;
+}
+.ratio:hover .recruit-overlay{ opacity:1; }
+.overlay-chip{ background:rgba(0,0,0,.55); padding:8px 12px; border-radius:8px; }
+
+
+@media (max-width: 768px) {
+  .recruitHeading{
+    font-size: 32px;
+  }
+  .recruit-overlay {
+    opacity: 1 !important; /* show overlay */
+  }
+  }

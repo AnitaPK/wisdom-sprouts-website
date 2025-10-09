@@ -127,3 +127,9 @@ border-radius: 25px;
 .see-all-btn:hover {
   background-color: #FD661F;
 }
+
+@media (max-width:768px) {
+  .popular-heading{
+    font-size: 28px !important;
+  }
+}

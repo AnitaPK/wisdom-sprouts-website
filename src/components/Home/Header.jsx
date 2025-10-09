@@ -1,20 +1,30 @@
 import React from "react";
 import "./Header.css";
 import Image from "next/image";
+import { SlCalender } from "react-icons/sl";
 
 export default function Header() {
   return (
     <>
-      <section className="hero-section container-fluid  mt-0 ">
-        <div className="custom-padding">
-          <div className="hero-inner d-flex flex-column flex-md-row align-items-center justify-content-between ms-5 mb-5">
-            <div className="hero-info text-center text-md-start mb-4 mb-md-0">
+      <section className="hero-section container-fluid mt-4 ">
+        <img
+          src="/curveImage.png"
+          className="img-fluid curveImage position-absolute"
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="custom-padding  p-md-5 p-sm-0 ">
+          <div className="hero-inner d-flex flex-column flex-lg-row mt-0 align-items-center justify-content-between p-md-5 mx-md-4 p-sm-0 ">
+            <div className="hero-info   text-md-start text-sm-center mb-4 mb-md-0 px-2">
               <span className="pill">Never stop learning</span>
-              <h1 className="hero-title">
-                Empowering Your <br /> Tech Career Journey
-              </h1>
+              <h3 className="hero-title mt-3">
+                Empowering Your Tech Career Journey
+               
+              </h3>
 
-              <p className="hero-sub">
+              <p className="hero-sub  text-md-start w-100">
                 Join our industry-aligned programs and achieve your career goals
               </p>
 
@@ -28,18 +38,18 @@ export default function Header() {
               </div>
             </div>
 
-            <div className="d-inline-flex hero-image position-relative">
+            {/* <div className="d-inline-flex hero-image position-relative bg-danger"> */}
               {/* Main girl image */}
-              <Image
+              <img
                 src="/lifestyle-business-people-using-laptop-computer-pink 1.png"
-                alt="Girl"
-                priority
-                fill
-                className="main-img"
+                alt="Smiling student holding a laptop"
+                // fill
+                className="main-img "
+
                 // width= {400}
-    // height= {400}
+                // height= {400}
               />
-            </div>
+            {/* </div> */}
 
             {/* Small right image */}
 
@@ -47,20 +57,23 @@ export default function Header() {
               <Image
                 src="/Group 9.png"
                 alt="Small right"
-                width={90}
-                height={90}
+                width={140}
+                height={140}
                 className="small-right"
               />
             </div>
 
             <div className="d-inline-flex align-items-center rounded-4 shadow-sm px-4 py-2 stats-card">
-              <div className="me-3 d-flex align-items-center justify-content-center bg-info rounded-3 position-relative custom-img-div">
+              <div className="me-3 d-flex align-items-center justify-content-center p-4 bg-info rounded-3 position-relative custom-img-div">
                 <Image
                   src="/calendar-1.png"
                   alt="calendar"
-                  fill
-                  className="object-fit-contain"
+                  // fill
+                  height={40}
+                  width={40}
+                  // className="img-fluid "
                 />
+                {/* <SlCalender color="#fff" /> */}
               </div>
               <div className="px-3">
                 <p className="mb-0 fw-bold pOne">250k</p>

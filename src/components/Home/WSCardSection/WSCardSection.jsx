@@ -6,9 +6,12 @@ export default async function CardSection({  features } ) {
 
   return (
     <>
-      <div className="container-fluid customContainer">
-        <div className="container">
-        <h2 className="text-center">
+      <div className="container-fluid customContainer position-relative">
+      <div className='about-us-container '>
+        <img src='/Frame 427320760.png' alt="" className='custom-image-play'/>
+      </div>
+        <div className="container ">
+        <h2 className="text-center fs-0 mt-5 mt-sm-0 ">
           Things Students love <br />
           about Wisdom Sprouts
         </h2>

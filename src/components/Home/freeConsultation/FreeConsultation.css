@@ -78,7 +78,7 @@
   padding: 0.75rem 1rem;
   font-size: 0.95rem;
   font-family: 'Montserrat', sans-serif !important;
-  background-color: #D2E6E4;
+  background-color: rgba(255, 255, 255, 0.6);
   color: #fff;
 }
 /* White placeholder */
@@ -140,9 +140,11 @@ select.free-input option {
   }
   .free-subtext {
     text-align: center;
+    margin-bottom: 3rem;
   }
   .free-list {
     text-align: left;
+    width: 80%;
   }
   .free-card {
     margin-top: 2rem;

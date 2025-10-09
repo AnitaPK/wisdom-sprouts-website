@@ -15,7 +15,7 @@ const CoursesComponent = ({ categories }) => {
         {categories.map((category, index) => (
           <li className="nav-item" key={index}>
             <button
-              className={`nav-link mx-2 ${activeTab === index ? "active" : ""}`}
+              className={`nav-link m-2 ${activeTab === index ? "active" : ""}`}
               onClick={() => setActiveTab(index)}
             >
               {category.title}

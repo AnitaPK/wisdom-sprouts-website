@@ -1,0 +1,27 @@
+.workshopHeading{
+  font-size: 40px;
+  color:#074347;
+  font-weight:550;
+font-family:'Montserrat', sans-serif !important;
+
+}
+.workshopSubtext{
+  max-width:760px;
+  margin:0 auto;
+  color:#074347;
+  font-family:'Montserrat', sans-serif !important;
+  font-size:16px;
+}
+.ws-overlay{ position:absolute; inset:0; background:rgba(0,0,0,.35); color:#fff; opacity:0; transition:opacity .3s ease; }
+.ratio:hover .ws-overlay{ opacity:1; }
+.overlay-chip{ background:rgba(0,0,0,.55); padding:8px 12px; border-radius:8px; }
+
+
+@media (max-width: 768px) {
+.workshopHeading{
+  font-size: 32px;
+}
+.ws-overlay {
+  opacity: 1 !important; /* show overlay */
+}
+}

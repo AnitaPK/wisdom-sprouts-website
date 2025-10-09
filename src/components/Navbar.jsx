@@ -4,8 +4,13 @@ import Image from "next/image";
 import LOGO from '../../public/logo.png'
 import { usePathname } from "next/navigation"; 
 import "./Navbar.css"
+import { useEffect, useRef, useState } from "react";
 export default function Navbar() {
    const pathname = usePathname();
+   const [isFixed, setIsFixed] = useState(false);
+   const [isPastTop, setIsPastTop] = useState(false);
+   const [navHeight, setNavHeight] = useState(0);
+   const navRef = useRef(null);
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/aboutus" },
@@ -15,22 +20,32 @@ export default function Navbar() {
     { name: "Gallery", path: "/gallery" },
     { name: "Hire From Us", path: "/hire-from-us" },
   ];
+   useEffect(() => {
+     const onScroll = () => {
+       const scrollY = window.scrollY || window.pageYOffset;
+       const viewportH = window.innerHeight;
+       setIsFixed(scrollY >= viewportH);
+       setIsPastTop(scrollY > 4);
+     };
+     onScroll();
+     window.addEventListener('scroll', onScroll, { passive: true });
+     return () => window.removeEventListener('scroll', onScroll);
+   }, []);
 
-
+   useEffect(() => {
+     const updateHeight = () => {
+       if (navRef.current) {
+         setNavHeight(navRef.current.offsetHeight || 0);
+       }
+     };
+     updateHeight();
+     window.addEventListener('resize', updateHeight);
+     return () => window.removeEventListener('resize', updateHeight);
+   }, []);
 
   return (
-    <div className=""
-      style={{
-        backgroundColor: "#D2E6E4", 
-        backgroundImage: "url('/curveImage.png')", 
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "auto",
-        backgroundPosition: "center",
-         width: "100%",
-        // minHeight: "100px", 
-        height:"189px"
-      }}>
-    <nav className="navbar navbar-expand-lg custom_navbar">
+    <div className={"navbar-outer-wrapper " + (isFixed ? " is-fixed" : "pt-5") }>
+    <nav ref={navRef} className={"navbar navbar-expand-lg custom_navbar" + (isPastTop ? " nav-blur" : "") }>
       <div className="container">
         
         {/* Left: Logo */}
@@ -39,8 +54,8 @@ export default function Navbar() {
             src={LOGO} 
             alt="Logo" 
             width={150} 
-            height={83.33} 
-            className="me-2"
+            height={70.33} 
+            className="me-2 object-fit-contain"
           />
         </Link>
 
@@ -77,6 +92,7 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
+    <div style={{ height: isFixed ? navHeight : 0 }}></div>
     </div>
   );
 }

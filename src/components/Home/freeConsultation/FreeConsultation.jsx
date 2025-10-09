@@ -7,11 +7,11 @@ import ReactCountryFlag from "react-country-flag";
 export default function FreeConsultation() {
    const [phone, setPhone] = useState("");
   return (
-    <div className="container-fluid free-section px-5 mb-5">
+    <div className="container-fluid free-section px-3 mb-5">
       <div className="container">
-      <div className="row align-items-center">
+      <div className="row align-items-center  ">
         {/* Left Content */}
-        <div className="col-12 col-lg-6 mb-4 mb-lg-0">
+        <div className="col-12 col-lg-6 mb-3 mb-sm-0 mb-lg-0">
           <h2 className="free-heading mt-0">
             Start Your Tech Journey with a Free Expert Session
           </h2>
@@ -19,7 +19,7 @@ export default function FreeConsultation() {
             Get personalized advice on the best training, technology stack, and
             learning plan
           </p>
-          <ul className="free-list px-5">
+          <ul className="free-list  px-0">
             <li>Discuss your goals, career path, or tech interests</li>
             <li>
               Get guidance on course selection and placement opportunities
@@ -30,8 +30,8 @@ export default function FreeConsultation() {
         </div>
 
         {/* Right Form */}
-        <div className="col-12 col-lg-6 ps-5 ">
-          <div className="free-card ms-5">
+        <div className="col-sm-12 col-lg-6  d-md-flex align-items-end justify-content-end">
+          <div className="free-card ms-md-5">
             <h3 className="free-card-title">Get a free demo</h3>
             <form>
               {/* Name */}
@@ -64,7 +64,7 @@ export default function FreeConsultation() {
         style={{
           display: "flex",
           alignItems: "center",
-          background: "#D2E6E4",
+          background: "rgba(255, 255, 255, 0.6)",
           borderRadius: "28px",
           padding: "10px 16px",
           width: "100%",

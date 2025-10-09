@@ -1,11 +1,11 @@
-import GallaryPage from '@/components/Gallary/GallaryPage'
+import GalleryPage from '@/components/Gallery/GalleryPage'
 import React from 'react'
 import '@/styles/globals.css'
 
 const page = () => {
   return (
     <>
-      <GallaryPage />
+      <GalleryPage />
     </>
   )
 }

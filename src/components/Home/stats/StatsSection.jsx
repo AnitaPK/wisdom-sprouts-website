@@ -36,7 +36,7 @@ export default function StatsSection() {
           Empowering Futures <br /> with Real Results
         </h2>
 
-        <div className="row justify-content-center g-4">
+        <div className="row justify-content-center p-3 g-4">
           {statsData.map((item) => (
             <div
               key={item.id}
